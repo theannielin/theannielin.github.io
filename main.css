@@ -91,7 +91,7 @@ color: #941100
 .col1 {
 font-size: 15px;
 float: left;
-width: 30%;
+width: 50%;
 font-family: caviardreams;
 }
 
@@ -142,6 +142,27 @@ margin-bottom: 24px;
 
 #footer:hover{
 color: #941100;
+}
+
+#eyes{
+font-size: 30px;
+text-align: center;
+}
+
+#eyes:hover{
+color: #941100;
+}
+
+.col1blog {
+float: left;
+width: 30%;
+font-family: caviardreams;
+}
+
+.col2blog {
+float: right;
+width: 70%;
+font-family: caviardreams;
 }
 
 a:link {text-decoration:none; color: #666;}
