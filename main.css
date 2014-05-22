@@ -1,13 +1,13 @@
 @font-face
 {
 font-family: passiontea;
-src: url(PassionTea.ttf);
+src: url(/fonts/PassionTea.ttf);
 }
 
 @font-face
 {
 font-family: caviardreams;
-src: url(CaviarDreams.ttf);
+src: url(/fonts/CaviarDreams.ttf);
 }
 
 .main
