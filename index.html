@@ -29,16 +29,25 @@
         $(document).ready(function() {
             $('#fullpage').fullpage({
                 anchors: ['home', 'about', 'resume', 'work', 'blog'],
+                scrollOverflow: true,
 				navigation: true,
 				navigationPosition: 'right',
                 css3: true,
                 easing: 'easeOutBack',
                 scrollingSpeed: 600,
                 continuousVertical: true,
-                scrollOverflow: true
             });
         });
 	</script>
+    <script type="text/javascript">
+        function toggle_visibility(id) {
+            var e = document.getElementById(id);
+            if(e.style.display == 'block')
+            e.style.display = 'none';
+            else
+            e.style.display = 'block';
+        }
+    </script>
 </head>
     
 <body>
@@ -127,6 +136,68 @@
         <!-- About End -->
         <!-- Resume Begin -->
         <div class="section">
+            <div id="resumepage">
+                <a href="resume/AnnieLinResume.pdf">
+                    <div style="width: 830px; height: 30px; margin-left: auto; margin-right: auto; display: block;">
+                        <div id="downloadresume">
+                        Download Detailed Resume
+                        </div>
+                    </div>
+                </a>
+                <br>
+                <div class="main" style="font-family: caviardreams;">
+                     <a href="#" onclick="toggle_visibility('education');"><h1 class="darker">⇓ EDUCATION </h1><a></a>
+                    <div id="education">
+                        <div class="smallfont"> Harvard College </div>
+                        <div class="smallerfont"> 
+                            Cambridge, MA | B.A. Computer Science (Expected Graduation: May 2017)
+                            <ul class="smalllist">
+                                <li>Women in Computer Science (Publicity Chair)</li>
+                                <li>First Generation Student Union (Public Relations Chair)</li>
+                                <li>Taiwanese Cultural Society (Secretary)</li>
+                                <li>Rubik's Cube Club (Secretary)</li>
+                                <li>Harvard-Radcliffe Chinese Students Association. </li>
+                            </ul>
+                        </div>
+                        <div class="smallfont"> Central High School (Only High School in U.S. to Confer Academic Degrees)</div>
+                        <div class="smallerfont">
+                            Philadelphia, PA | B.A. Graduated 3rd in class of 610. SAT I: M: 800 R: 700 W: 760. (June 2013)
+                            <ul class="smalllist">
+                                <li>Student Environmental Action Society President (3 Years)</li>
+                                <li>National Honor Society Secretary (2 Years)</li>
+                                <li>Math Club President (2 Years)</li>
+                                <li>Art With Heart (Service Organization) President (2 Years)</li>
+                                <li>Ribbon Dancing Team</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" onclick="toggle_visibility('experience');"><h1 class="darker">⇓ WORK EXPERIENCE </h1><a></a>
+                    <div id="experience">
+                        <ul class="smalllist">
+                            <li>Center for International Exchange (Showa Women’s University)</li>
+                            <li>Ethnic Technologies, LLC</li>
+                            <li>Cabot Science Library (Harvard University)</li>
+                            <li>Boat People SOS (Summer Youth Bike and Environmental Program)</li>
+                            <li>STARTALK Chinese Academy</li>
+                            <li>White-Williams Scholars</li>
+                            <li>
+                        </ul>
+                    </div>
+                    <a href="#" onclick="toggle_visibility('skills');"><h1 class="darker">⇓ SKILLS</h1><a></a>
+                    <ul class="smalllist" id="skills">
+                        <li>Javascript</li>
+                        <li>C</li>
+                        <li>PHP</li>
+                        <li>OCAML</li>
+                        <li>PYTHON</li>
+                        <li>HTML/CSS</li>
+                        <li>Fluent Chinese (Mandarin)</li>
+                        <li>Basic German</li>
+                        <li>Elementary Japanese</li>
+                        <li>Graphic Design (With Open Source Software)</li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <!-- Resume End -->
         <!-- Work Begin -->
@@ -144,7 +215,7 @@
                     <img src="images/eyes.png" style="width: 260px;"/>
                 </div>
                 <div class="col2blog">  
-                    <iframe class="border" width="600" height="350" src="http://theannielin.blogspot.com/" frameborder="0" allowfullscreen></iframe>
+                    <iframe class="border" width="620" height="350" src="http://theannielin.blogspot.com/" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>

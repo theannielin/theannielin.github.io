@@ -10,6 +10,12 @@ font-family: caviardreams;
 src: url(/fonts/CaviarDreams.ttf);
 }
 
+@font-face
+{
+font-family: caviardreamsbold;
+src: url(/fonts/CaviarDreamsBold.ttf);
+}
+
 a:link {text-decoration:none; color: #666;}
 a:visited {text-decoration:none; color: #666;}
 a:hover {text-decoration:none; color: #666;}
@@ -64,15 +70,27 @@ font-size: 20px;
 display: inline-block;
 background: #ccc;
 color: #FFF;
-font-size: 20px;    
+font-size: 15px; 
+font-family: caviardreamsbold;
 padding: 2px 2px;
 margin: 0 0px 4px 0;
 }
 
-.list{
+.list, .smalllist{
 margin: 0px 0px 0px 0px;
 padding: 0px 0px 0px 0px;
 }
+
+.smalllist li {
+display: inline-block;
+background: #ccc;
+color: #fff;
+font-size: 12px;   
+font-family: caviardreamsbold;
+padding: 2px 2px;
+margin: 0 0px 4px 0;
+}
+
 
 #myheader {
 position: static;
@@ -401,4 +419,63 @@ float: right;
 width: 70%;
 font-family: caviardreams;
 margin-top: 40px;
+}
+
+#downloadresume{
+float: left; 
+display: block;
+background: #679179;
+color: #FFF;
+font-family: caviardreams;
+font-size: 25px;    
+padding: 2px 2px;
+margin: 0 0px 4px 0;
+-webkit-transition: all 0.4s ease;
+-moz-transition: all 0.4s ease;
+-o-transition: all 0.4s ease;
+-ms-transition: all 0.4s ease;
+transition: all 0.4s ease;
+}
+
+#downloadresume:hover{
+background: #ccc;
+}
+
+#skills, #experience, #education {
+display: none;
+}
+
+.darker {
+color: #666;
+font-size: 20px;
+-webkit-transition: all 0.4s ease;
+-moz-transition: all 0.4s ease;
+-o-transition: all 0.4s ease;
+-ms-transition: all 0.4s ease;
+transition: all 0.4s ease;
+}
+
+.darker:hover{
+color: #aaa;
+}
+
+.smallerfont{
+font-size: 12px;
+font-family: caviardreamsbold;
+color: #aaa;
+padding: 0px 0px 0px 0px;
+margin: 0px 0px 0px 0px;
+}
+.smallfont{
+font-size: 17px;
+color: #aaa;
+font-family: caviardreamsbold;
+padding: 0px 0px 0px 0px;
+margin: 0px 0px 0px 0px;
+}
+
+#resumepage{
+margin-top: 150px;
+margin-bottom: 100px;
+position:relative
 }
