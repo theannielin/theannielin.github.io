@@ -20,14 +20,31 @@
     <link rel="shortcut icon" href="/images/icons/shortcuticon.png" type="image/x-icon" />
     <link rel="icon" href="/images/icons/shortcuticon.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="fullPage.js-master/jquery.fullPage.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="fullPage.js-master/vendors/jquery.easings.min.js"></script>   
+    <script type="text/javascript" src="fullPage.js-master/vendors/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="fullPage.js-master/jquery.fullPage.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                anchors: ['home', 'about', 'resume', 'work', 'blog'],
+				navigation: true,
+				navigationPosition: 'right',
+                css3: true,
+                easing: 'easeOutBack',
+                scrollingSpeed: 600,
+                continuousVertical: true
+            });
+        });
+	</script>
 </head>
     
 <body>
-    <!-- Main Section Begin -->
-    <div class="main">
-        <!-- Header Begin -->
-        <div id="header">
-            <a href="index.html">
+    <!-- Header Begin -->
+    <div id="header" class="layer1">
+        <div id="myheader" class="main">
+            <a href="#home">
                 <div id="iamannielin"><!-- Homepage Link --></div> 
             </a>
             <div id="icons">    
@@ -52,29 +69,87 @@
             </div>
             <div id="navbar">
                 <ul id="navtag">
-                    <li id="navigation" class=><a href="about.html">about</a></li>
-                    <li id="navigation"><a href="resume.html">resume</a></li>
-                    <li id="navigation"><a href="work.html">work</a></li>
-                    <li id="navigation"><a href="blog.html">blog</a></li>
+                    <li id="navigation" class=><a href="#about">about</a></li>
+                    <li id="navigation"><a href="#resume">resume</a></li>
+                    <li id="navigation"><a href="#work">work</a></li>
+                    <li id="navigation"><a href="#blog">blog</a></li>
                 </ul>
             </div>
             <div id="scissors"></div>
             <div id="line"></div>
         </div> 
-        <!-- Header End -->
+    </div>
+    <!-- Header End -->
+    <!-- Footer Begin -->
+    <div id="footer" class="layer1">
+        <div id="myfooter" class="main">
+            <br>
+            <p> { All content &copy Annie Lin }</p>
+            <br>
+        </div> 
+    </div>
+    <!-- Footer End -->
+    <!-- Page Scroller Begin -->
+    <div id="fullpage" class="layer2">
         <!-- Home Begin -->
-        <div>
+        <div class="section">
         </div>
         <!-- Home End -->
+        <!-- About Begin -->
+        <div class="section">
+            <div id="aboutmain">
+                <div class="col1about">
+                    <div id="aboutimage"><!-- About Image --></div> 
+                </div>
+                <div class="col2about">  
+                    <h1>SUMMARY</h1>
+                    <p>Hi! I'm Annie Lin aka the girl with the bangs. 
+                        <br> 
+                        NYC-born and Philly-raised. Alumni of the 272nd class of Central. (2nd oldest public high school in the country!) Proud bearer of a simian line. Current sophomore at Harvard studying CS. Artist, Scholar, & so much more!
+                    </p>
+                    <br>
+                    <h1>I ENJOY:</h1>
+                    <ul class="list">
+                      <li>pineapples</li>
+                      <li>franz kafka</li>
+                      <li>waterman butterfly maps</li>
+                      <li>minimalist posters</li>
+                      <li>sriracha</li>
+                      <li>wes anderson films</li>
+                      <li>rubik's cubes</li>
+                      <li>arabesques</li>
+                      <li>making peace signs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+        <!-- Resume Begin -->
+        <div class="section">
+        </div>
+        <!-- Resume End -->
+        <!-- Work Begin -->
+        <div class="section">
+        </div>
+        <!-- Work End -->
+        <!-- Blog Begin -->
+        <div class="section">
+            <div class="main">
+                <div class="col1blog">
+                    <p id="eyes"> LOOK AT THE WORLD THROUGH MY EYES </p>
+                    <br>
+                    <p id="eyes"> JUST SCROLL </p>
+                    <p id="eyestiny"> (Or tap, if on mobile) </p>
+                    <img src="images/eyes.png" style="width: 260px;"/>
+                </div>
+                <div class="col2blog">  
+                    <iframe width="600" height="380" src="http://theannielin.blogspot.com/" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
     </div>
-    <!-- Main Section End -->
-    <!-- Footer Begin -->
-    <div id="footer">
-        <br>
-        <br>
-        <p> You have reached the bottom of this page! &copy Annie Lin</p>
-    </div> 
-    <!-- Footer End -->
+    <!-- Page Scroller End -->
 </body>
 </html>
 <!-- Congrats! You have reached the end! -->
