@@ -387,11 +387,18 @@ float: left;
 width: 30%;
 font-family: caviardreams;
 position: relative; 
-top: 115px;
+top: 130px;
+right: 25px;
+}
+
+.border 
+{
+border: dashed 2px #ccc;
 }
 
 .col2blog {
 float: right;
 width: 70%;
 font-family: caviardreams;
+margin-top: 40px;
 }
