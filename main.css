@@ -350,7 +350,7 @@ text-align: center;
 }
 
 #eyestiny:hover{
-color: #941100;
+color: #ccc;
 }
 
 #eyestiny{
@@ -359,13 +359,15 @@ text-align: center;
 }
 
 #eyes:hover{
-color: #941100;
+color: #ccc;
 }
 
 .col1blog {
 float: left;
 width: 30%;
 font-family: caviardreams;
+position: relative; 
+top: 150px;
 }
 
 .col2blog {
