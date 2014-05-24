@@ -542,11 +542,13 @@ margin-left: auto;
 margin-right: auto;
 display: block;
 margin-top: 90px;
-
+position: relative;
 }
+
 #emptytable{
 width:500px;
 height: 475px;
+position: absolute;
 background-image: url(images/hometable/emptytable.png);
 background-size: 500px;
 background-repeat:no-repeat;
@@ -556,16 +558,16 @@ background-repeat:no-repeat;
 width: 75px;
 height: 60px;
 position: absolute;
-top: 310px;
-right: 560px;
+top: 180px;
+right: 170px;
 color: #aaa;
 }
 
 #homeabout:hover{
 width: 75px;
 height: 60px;
-top: 325px;
-right: 550px;
+top: 197px;
+right: 160px;
 background-image: url(images/hometable/abouttable.png);
 background-size: 55px 30px;
 background-repeat:no-repeat;
@@ -575,16 +577,16 @@ background-repeat:no-repeat;
 width: 75px;
 height: 60px;
 position: absolute;
-top: 250px;
-right: 700px;
+top: 125px;
+right: 310px;
 color: #aaa;
 }
 
 #homeresume:hover{
 width: 75px;
 height: 60px;
-top: 270px;
-right: 690px;
+top: 143px;
+right: 300px;
 background-image: url(images/hometable/resumetable.png);
 background-size: 70px 30px;
 background-repeat:no-repeat;
@@ -594,16 +596,16 @@ background-repeat:no-repeat;
 width: 90px;
 height: 60px;
 position: absolute;
-top: 200px;
-right: 610px;
+top: 70px;
+right: 220px;
 color: #aaa;
 }
 
 #homework:hover{
 width: 75px;
 height: 60px;
-top: 18px;
-right: 623px;
+top: 74px;
+right: 230px;
 background-image: url(images/hometable/worktable.png);
 background-size: 90px 60px;
 background-repeat:no-repeat;
@@ -611,18 +613,18 @@ background-repeat:no-repeat;
 
 #homeblog{
 width: 75px;
-height: 60px;
+height: 40px;
 position: absolute;
-top: 310px;
-right: 560px;
+top: 120px;
+right: 100px;
 color: #aaa;
 }
 
 #homeblog:hover{
 width: 75px;
-height: 60px;
-top: 325px;
-right: 550px;
+height: 40px;
+top: 125px;
+right: 82px;
 background-image: url(images/hometable/blogtable.png);
 background-size: 55px 30px;
 background-repeat:no-repeat;
