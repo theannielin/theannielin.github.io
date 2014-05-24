@@ -441,6 +441,26 @@ transition: all 0.4s ease;
 background: #ccc;
 }
 
+#forkme:hover{
+background: #ccc;
+}
+
+#forkme{
+float: left; 
+display: block;
+background: #679179;
+color: #FFF;
+font-family: caviardreams;
+font-size: 25px;    
+padding: 2px 2px;
+margin: 0 0px 4px 0;
+-webkit-transition: all 0.4s ease;
+-moz-transition: all 0.4s ease;
+-o-transition: all 0.4s ease;
+-ms-transition: all 0.4s ease;
+transition: all 0.4s ease;
+}
+
 #skills, #experience, #education {
 display: none;
 }
@@ -478,4 +498,37 @@ margin: 0px 0px 0px 0px;
 margin-top: 150px;
 margin-bottom: 100px;
 position:relative
+}
+
+.workimage:hover{
+opacity: 0.3;
+-webkit-filter: grayscale(0%);
+}
+.workimage{
+opacity: 0.7; 
+-webkit-transition: all 0.4s ease;
+-moz-transition: all 0.4s ease;
+-o-transition: all 0.4s ease;
+-ms-transition: all 0.4s ease;
+transition: all 0.4s ease;
+-webkit-filter: grayscale(100%);
+}
+
+#workdescription{
+font-family: caviardreams;
+width: 100%;
+padding: 0px 0px 0px 0px;
+margin: 0px 0px 0px 0px;
+}
+
+#workdescription li {
+text-align: center;
+width: 190px;
+display: inline-block;
+background: #ccc;
+color: #fff;
+font-size: 12px;   
+font-family: caviardreamsbold;
+padding: 0px 0px 0px 0px;
+margin: 0px 0px 0px 0px;
 }
