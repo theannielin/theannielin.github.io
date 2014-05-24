@@ -534,3 +534,96 @@ font-family: caviardreamsbold;
 padding: 0px 0px 0px 0px;
 margin: 0px 0px 0px 0px;
 }
+
+#homedrawing{
+width:500px;
+height: 475px;
+margin-left: auto;
+margin-right: auto;
+display: block;
+margin-top: 90px;
+
+}
+#emptytable{
+width:500px;
+height: 475px;
+background-image: url(images/hometable/emptytable.png);
+background-size: 500px;
+background-repeat:no-repeat;
+}
+
+#homeabout{
+width: 75px;
+height: 60px;
+position: absolute;
+top: 310px;
+right: 560px;
+color: #aaa;
+}
+
+#homeabout:hover{
+width: 75px;
+height: 60px;
+top: 325px;
+right: 550px;
+background-image: url(images/hometable/abouttable.png);
+background-size: 55px 30px;
+background-repeat:no-repeat;
+}
+
+#homeresume{
+width: 75px;
+height: 60px;
+position: absolute;
+top: 250px;
+right: 700px;
+color: #aaa;
+}
+
+#homeresume:hover{
+width: 75px;
+height: 60px;
+top: 270px;
+right: 690px;
+background-image: url(images/hometable/resumetable.png);
+background-size: 70px 30px;
+background-repeat:no-repeat;
+}
+
+#homework{
+width: 90px;
+height: 60px;
+position: absolute;
+top: 200px;
+right: 610px;
+color: #aaa;
+}
+
+#homework:hover{
+width: 75px;
+height: 60px;
+top: 18px;
+right: 623px;
+background-image: url(images/hometable/worktable.png);
+background-size: 90px 60px;
+background-repeat:no-repeat;
+}
+
+#homeblog{
+width: 75px;
+height: 60px;
+position: absolute;
+top: 310px;
+right: 560px;
+color: #aaa;
+}
+
+#homeblog:hover{
+width: 75px;
+height: 60px;
+top: 325px;
+right: 550px;
+background-image: url(images/hometable/blogtable.png);
+background-size: 55px 30px;
+background-repeat:no-repeat;
+}
