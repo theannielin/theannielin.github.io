@@ -48,12 +48,13 @@
             e.style.display = 'block';
         }
     </script>
-    <script type="text/javascript">
-    <!-- 
-    if (screen.width <= 700) {
-    document.location = "mobilepage.html";
-    -->
+    <!-- For Mobile -->
+    <script language=javascript>
+    <!--
+    if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+       location.replace("mobilepage.html");
     }
+    -->
     </script>
     <!-- Google Analytics Code -->
 	<script>
