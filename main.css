@@ -407,7 +407,7 @@ float: left;
 width: 30%;
 font-family: caviardreams;
 position: relative; 
-top: 130px;
+top: 110px;
 right: 25px;
 }
 
@@ -419,6 +419,7 @@ border: dashed 2px #ccc;
 .col2blog {
 float: right;
 width: 70%;
+height: 350px;
 font-family: caviardreams;
 margin-top: 40px;
 }
@@ -525,7 +526,7 @@ margin: 0px 0px 0px 0px;
 
 #workdescription li {
 text-align: center;
-width: 190px;
+width: 185px;
 display: inline-block;
 background: #ccc;
 color: #fff;
