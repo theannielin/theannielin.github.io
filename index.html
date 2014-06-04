@@ -48,21 +48,6 @@
             e.style.display = 'block';
         }
     </script>
-    <!-- For Mobile -->
-    <style type="text/css">
-        .mobileShow { display: none;}
-        /* Smartphone Portrait and Landscape */
-        @media only screen
-        and (min-device-width : 320px)
-        and (max-device-width : 480px){ .mobileShow { display: inline;}}
-    </style>
-    <style type="text/css">
-        .mobileHide { display: inline;}
-        /* Smartphone Portrait and Landscape */
-        @media only screen
-        and (min-device-width : 320px)
-        and (max-device-width : 480px){  .mobileHide { display: none;}}
-    </style>
     <!-- Google Analytics Code -->
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -259,13 +244,12 @@
                     <a href="http://www.theannielin.blogspot.com">
 	                    <p id="eyes"> LOOK AT THE WORLD THROUGH <br>MY EYES</p>
 	                    <br>
-	                    <p id="eyes" class="mobileHide"> JUST SCROLL </p>
-	                    <p id="eyestiny" class="mobileHide"> (within the box: click and then use the down arrow) </p>
-                        <p id="eyestiny" class="mobileShow">Tap Here</p>
+	                    <p id="eyes"> JUST SCROLL </p>
+	                    <p id="eyestiny"> (within the box: click and then use the down arrow) </p>
 	                    <img src="images/eyes.png" style="width: 260px;"/>
                     </a>
                 </div>
-                <div class="col2blog mobileHide">  
+                <div class="col2blog">  
                     <iframe class="border" style="height: 100%" width="620" height="350" src="http://theannielin.blogspot.com/" frameborder="0"></iframe>
                 </div>
             </div>
