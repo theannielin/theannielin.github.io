@@ -25,6 +25,7 @@
     <script src="fullPage.js-master/vendors/jquery.easings.min.js"></script>   
     <script type="text/javascript" src="fullPage.js-master/vendors/jquery.slimscroll.min.js"></script>
     <script type="text/javascript" src="fullPage.js-master/jquery.fullPage.js"></script>
+    <style type="text/css" src="outdatedBrowser.min.css"></style>
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
@@ -272,6 +273,20 @@
         <!-- Blog End -->
     </div>
     <!-- Page Scroller End -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+     <p>Update your browser to view this website correctly. <a id="btnUpdate" href="http://outdatedbrowser.com/">Update my browser now</a></p>
+     <p id="btnClose"><a href="#">Close</a></p>
+ </div>
+
+                            //plugin function, place inside DOM ready function
+                            outdatedBrowser({
+                                bgColor: '#3f3f3f',
+                                color: '#e3e3e3',
+                                lowerThan: 'IE10'
+                            })
+                        
+<script src="outdatedBrowser.min.js"></script>
 </body>
 </html>
 <!-- Congrats! You have reached the end! -->
