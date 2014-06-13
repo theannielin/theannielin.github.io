@@ -25,7 +25,7 @@
     <script src="fullPage.js-master/vendors/jquery.easings.min.js"></script>   
     <script type="text/javascript" src="fullPage.js-master/vendors/jquery.slimscroll.min.js"></script>
     <script type="text/javascript" src="fullPage.js-master/jquery.fullPage.js"></script>
-    <style type="text/css" src="outdated-browser-master/src/outdatedBrowser.min.css"></style>
+    <link rel="stylesheet" type="text/css" href="../src/outdatedBrowser.min.css">
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
@@ -273,20 +273,36 @@
         <!-- Blog End -->
     </div>
     <!-- Page Scroller End -->
+
 <div id="outdated">
     <h6>Your browser is out-of-date!</h6>
-     <p>Update your browser to view this website correctly. <a id="btnUpdate" href="http://outdatedbrowser.com/">Update my browser now</a></p>
-     <p id="btnClose"><a href="#">Close</a></p>
- </div>
-
-                            //plugin function, place inside DOM ready function
-                            outdatedBrowser({
-                                bgColor: '#3f3f3f',
-                                color: '#e3e3e3',
-                                lowerThan: 'IE10'
-                            })
-                        
-<script src="outdated-browser-master/src/outdatedBrowser.min.js"></script>
+    <p>Update your browser to view this website correctly. <a id="btnUpdate" href="http://outdatedbrowser.com/">Update my browser now</a></p>
+    <p id="btnClose"><a href="#">Close</a></p>
+</div>
+<script src="../src/outdatedBrowser.min.js"></script>
+<!-- Outdated-Browser Plugin Call -->
+        <script>
+            //event listener form DOM ready
+            function addLoadEvent(func) {
+                var oldonload = window.onload;
+                if (typeof window.onload != 'function') {
+                    window.onload = func;
+                } else {
+                    window.onload = function() {
+                        oldonload();
+                        func();
+                    }
+                }
+            }
+            //call function after DOM ready
+            addLoadEvent(
+                outdatedBrowser({
+                    bgColor: '#b7b7b7',
+                    color: '#ff0000',
+                    lowerThan: 'borderImage'
+                })
+            );
+        </script>
 </body>
 </html>
 <!-- Congrats! You have reached the end! -->
