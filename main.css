@@ -98,7 +98,7 @@ margin: 0 0px 4px 0;
 position: static;
 overflow: auto;
 display: block;
-padding: 0px 0px 30px;
+padding: 0px 0px 30px 0px;
 }
 
 #myfooter{
@@ -298,7 +298,8 @@ top: 37px;
 position: relative; 
 top: 32px;
 float: right;
-padding-right: 0px
+padding-right: 0px;
+padding-left: 0px
 }
 
 #navtag{
@@ -315,8 +316,6 @@ padding: 0px 20px
  
 #navigation:last-child {
 border-right: none;
-padding-left: 20px;
-padding-right:  20px;
 }
  
 #navigation a {
@@ -352,6 +351,8 @@ top: 103px;
 left: 775px;
 width: 20px;
 height: 20px;
+padding: 0 0 0 0;
+margin: 0 0 0 0;
 }
 
 .col1about {
