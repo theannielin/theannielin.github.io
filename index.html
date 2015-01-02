@@ -1,6 +1,6 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!--
                \||/                                              \||/
@@ -11,35 +11,43 @@
              '<><><>'                                          '<><><>'
      -->
     <!-- Portfolio/Personal website for and made by Annie Lin -->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta content='harvard, annie, lin, annie lin, philadelphia' name='keywords'>
-    <meta name="Description" content="Hello, world! Portfolio/Personal website for and made by Annie Lin, Harvard student hailing from Philadelphia!">
-    <meta name="description" content="Hello, world! Portfolio/Personal website for and made by Annie Lin, Harvard student hailing from Philadelphia!"><meta name="description" content="Hello, world! Portfolio/Personal website for and made by Annie Lin, Harvard student hailing from Philadelphia!">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Annie Lin">
     <meta name="robots" content="NOODP">
+    <meta content='harvard, annie, lin, annie lin, philadelphia' name='keywords'>
+    <meta name="description" content="Hello, world! Portfolio/Personal website for and made by Annie Lin, Harvard student hailing from Philadelphia!"><meta name="description" content="Hello, world! Portfolio/Personal website for and made by Annie Lin, Harvard student hailing from Philadelphia!">
     <title>Annie Lin</title>
     <link rel="shortcut icon" href="/images/icons/shortcuticon.png" type="image/x-icon" />
     <link rel="icon" href="/images/icons/shortcuticon.png" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- For Page Scrolling -->
     <link rel="stylesheet" type="text/css" href="fullPage.js-master/jquery.fullPage.css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="fullPage.js-master/vendors/jquery.easings.min.js"></script>   
     <script type="text/javascript" src="fullPage.js-master/vendors/jquery.slimscroll.min.js"></script>
     <script type="text/javascript" src="fullPage.js-master/jquery.fullPage.js"></script>
-    <link rel="stylesheet" type="text/css" href="../src/outdatedBrowser.min.css">
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
-                anchors: ['home', 'about', 'resume', 'work', 'blog'],
+                anchors: ['home', 'about', 'resume', 'projects', 'more'],
                 scrollOverflow: true,
-				navigation: true,
-				navigationPosition: 'right',
+                navigation: true,
+                navigationPosition: 'right',
                 css3: true,
                 easing: 'easeOutBack',
                 scrollingSpeed: 1000,
                 continuousVertical: true,
             });
         });
-	</script>
+    </script>
     <script type="text/javascript">
         function toggle_visibility(id) {
             var e = document.getElementById(id);
@@ -49,21 +57,31 @@
             e.style.display = 'block';
         }
     </script>
+
+    <!-- Custom CSS -->
+    <link href="css/annie.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- Detect Outdated Browsers: http://outdatedbrowser.com -->
+    <link rel="stylesheet" href="../outdatedbrowser/outdatedbrowser.min.css">    
+
     <!-- Google Analytics Code -->
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	
-	  ga('create', 'UA-51636012-1', 'anniel.in');
-	  ga('send', 'pageview');
-	
-	</script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-51636012-1', 'anniel.in');
+      ga('send', 'pageview');
+    
+    </script>
+
 </head>
     
 <body>
     <!-- Header Begin -->
+    <nav>
     <div id="header" class="layer1">
         <div id="myheader" class="main">
             <a href="#home">
@@ -90,24 +108,25 @@
                 </a>
             </div>
             <div id="navbar">
-                <ul id="navtag">
+                <ul id="navtag" class="nav navbar-nav navbar-right">
                     <li id="navigation" class=><a href="#about">about</a></li>
                     <li id="navigation"><a href="#resume">resume</a></li>
-                    <li id="navigation"><a href="#work">work</a></li>
-                    <li id="navigation"><a href="#blog">blog</a></li>
+                    <li id="navigation"><a href="#projects">projects</a></li>
+                    <li id="navigation"><a href="#more">more</a></li>
                 </ul>
             </div>
             <div id="scissors"></div>
             <div id="line"></div>
         </div> 
     </div>
+    <nav>
+        
     <!-- Header End -->
     <!-- Footer Begin -->
     <div id="footer" class="layer1">
         <div id="myfooter" class="main">
             <br>
-            <p style="font-size:13px; font-family:caviardreams"> { All content &copy Annie Lin }
-            <br>{ Site Works Best On Latest Browser Versions (Safari or Chrome Recommended) }</p>
+            <p style="font-size:13px; font-family:caviardreams"> { All content &copy Annie Lin }</p>
             <br>
         </div> 
     </div>
@@ -274,35 +293,38 @@
     </div>
     <!-- Page Scroller End -->
 
-<div id="outdated">
-    <h6>Your browser is out-of-date!</h6>
-    <p>Update your browser to view this website correctly. <a id="btnUpdate" href="http://outdatedbrowser.com/">Update my browser now</a></p>
-    <p id="btnClose"><a href="#">Close</a></p>
-</div>
-<script src="../src/outdatedBrowser.min.js"></script>
-<!-- Outdated-Browser Plugin Call -->
-        <script>
-            //event listener form DOM ready
-            function addLoadEvent(func) {
-                var oldonload = window.onload;
-                if (typeof window.onload != 'function') {
-                    window.onload = func;
-                } else {
-                    window.onload = function() {
+    <!-- ============= Outdated Browser ============= -->
+    <div id="outdated"></div>
+
+    <!-- javascript includes -->
+    <script src="../outdatedbrowser/outdatedbrowser.min.js"></script>
+
+    <!-- plugin call -->
+    <script>
+        //event listener form DOM ready
+        function addLoadEvent(func) {
+            var oldonload = window.onload;
+            if (typeof window.onload != 'function') {
+                window.onload = func;
+            } else {
+                window.onload = function() {
+                    if (oldonload) {
                         oldonload();
-                        func();
                     }
+                    func();
                 }
             }
-            //call function after DOM ready
-            addLoadEvent(
-                outdatedBrowser({
-                    bgColor: '#b7b7b7',
-                    color: '#ff0000',
-                    lowerThan: 'borderImage'
-                })
-            );
-        </script>
+        }
+        //call function after DOM ready
+        addLoadEvent(function(){
+            outdatedBrowser({
+                bgColor: '#f25648',
+                color: '#ffffff',
+                lowerThan: 'transform',
+                languagePath: '../outdatedbrowser/lang/en.html'
+            })
+        });
+    </script>
 </body>
 </html>
 <!-- Congrats! You have reached the end! -->

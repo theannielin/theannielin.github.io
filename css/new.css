@@ -1,0 +1,22 @@
+/* Main CSS sheet for www.anniel.in */
+
+@font-face {
+	font-family: passiontea;
+	src: url(/fonts/PassionTea.ttf);
+}
+
+@font-face {
+	font-family: caviardreams;
+	src: url(/fonts/CaviarDreams.ttf);
+}
+
+@font-face {
+	font-family: caviardreamsbold;
+	src: url(/fonts/CaviarDreamsBold.ttf);
+}
+
+#footer {
+	background-color: #fff;
+	border: none;
+}
+
