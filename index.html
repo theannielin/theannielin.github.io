@@ -34,7 +34,7 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
-                anchors: ['home', 'about', 'resume', 'projects', 'more'],
+                anchors: ['home', 'about', 'resume', 'projects'],
                 scrollOverflow: true,
                 css3: true,
                 easing: 'easeOutBack',
@@ -135,13 +135,13 @@
         <div class="container text-center">
             <br>
             <div style="font-size:30px; font-family: passiontea;">
+                <a class="page-scroll" href="#home">home</a>
                 <a class="page-scroll" href="#about">about</a> | 
-                <a class="page-scroll" href="#resume">resume</a> 
                 <a class="page-scroll" href="#home" id="cog">
                     <i class="fa fa-cog fa-spin fa-2x"></i>
                 </a>
+                <a class="page-scroll" href="#resume">resume</a> 
                 <a class="page-scroll" href="#projects">projects</a> | 
-                <a class="page-scroll" href="#more">more</a>
             </div>
             <div class="row">
                 <div class="col-md-2">
@@ -168,7 +168,7 @@
                     <area shape="rect" coords="250,200,325,230" href="#about" alt="about">
                     <area shape="rect" coords="115,140,190,175" href="#resume" alt="resume">
                     <area shape="rect" coords="200,80,275,125" href="#projects" alt="projects">
-                    <area shape="rect" coords="340,125,400,160" href="#more" alt="more">
+                    <area shape="rect" coords="340,125,400,160" href="#about" alt="more">
                 </map>
             </div><!-- /.container-->
         </div><!-- /.section-->
@@ -181,9 +181,13 @@
                     <div class="col-xs-2">
                         <!-- empty column-->
                     </div><!-- /.column-->
-                    <div class="col-xs-4">
+                    <div class="col-xs-4 text-center">
                         <a href="http://overture.me/annielin" target="_blank">
                             <img class="img-responsive" src= "img/about.png" alt="about">
+                        </a>
+                        <a class="btn btn-default btn-sm" href="#coffee" data-toggle="modal"> 
+                            <i class="fa fa-coffee"></i> 
+                            Coffee Appointments
                         </a>
                     </div><!-- /.column-->
                     <div class="col-xs-4">
@@ -359,40 +363,6 @@
             </div><!-- /.container-->
         </div><!-- /.section-->
 
-        <!-- More -->
-        <div class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-2">
-                        <!-- empty column-->
-                    </div><!-- /.column-->
-                    <div class="col-xs-8 text-center">
-                        <br>
-                        <div style="font-size:40px;">
-                            <a href="http://www.instagram.com/theannielin" target="_blank"> 
-                                  <i class="fa fa-instagram"></i>
-                            </a>
-                            <a href="http://thelittleorphanannie.tumblr.com/archive" target="_blank"> 
-                                  <i class="fa fa-tumblr-square"></i>
-                            </a>
-                            <a href="http://www.youtube.com/channel/UC4xmxjVcO3qGnQ7Y_hZlDnw" target="_blank"> 
-                                  <i class="fa fa-youtube-square"></i>
-                            </a>
-                        </div>
-                        <h1> SEE THE WORLD THROUGH MY EYES</h1>
-                        <a class="btn btn-default btn-sm" href="#coffee" data-toggle="modal"> 
-                            <i class="fa fa-coffee"></i> 
-                            Coffee Appointments
-                        </a>
-                        <br>
-                        <img src="img/eyes.png" style="width: 400px; margin: 0 auto;"/>
-                    </div><!-- /.column-->
-                    <div class="col-xs-2">
-                        <!-- empty column-->
-                    </div><!-- /.column-->
-                </div><!-- /.row-->
-            </div><!-- /.container-->
-        </div><!-- /.section-->
 
     </div><!-- /.fullpage-->
 
@@ -415,6 +385,24 @@
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+            <a href="http://www.instagram.com/theannielin" target="_blank"> 
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+            <a href="http://thelittleorphanannie.tumblr.com/archive" target="_blank"> 
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-tumblr fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+            <a href="http://www.youtube.com/channel/UC4xmxjVcO3qGnQ7Y_hZlDnw" target="_blank"> 
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
                 </span>
             </a>
             <p style="font-family:caviardreams; color: #666;">{ All content &copy Annie Lin }</p>
@@ -457,12 +445,12 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <div class="modal-body">
-                            <h1 style="font-size:15px;">Hi! I'm Annie!<br>
+                            <h1 style="font-size:13px;">Hi! I'm Annie!<br>
                             I'm always excited to meet (or re-meet) people.<br>
                             I would love to have a chat over coffee<br>
                             (or any other beverage of your choice).<br>
                             Let's grab a drink!<br></h1>
-                            <div style="font-size:35px;">
+                            <div style="font-size:25px;">
                                 <a href="mailto:theannielin@gmail.com?subject=Coffee%20Scheduling&body=Note-%20Please%20fill%20out:%0A%0AName:%20%0ADates/Times:%20%0ALocation:%20%0APhone:%20%0A"> 
                                     <span class="fa-stack fa-lg">
                                       <i class="fa fa-circle fa-stack-2x"></i>
@@ -470,8 +458,9 @@
                                     </span>
                                 </a>
                             </div>
-                            <h1 style="font-size:15px;">I will e-mail back you to<br>either confirm or reschedule!</h1>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close Window</button>
+                            <h1 style="font-size:13px;">I will e-mail back you to<br>either confirm or reschedule!</h1>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                <i class="fa fa-times"></i> Close Window</button>
                         </div>
                     </div>
                 </div>
