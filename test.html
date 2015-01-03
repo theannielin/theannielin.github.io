@@ -25,9 +25,6 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
     <!-- For Page Scrolling -->
     <link rel="stylesheet" type="text/css" href="fullPage.js-master/jquery.fullPage.css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -91,7 +88,7 @@
                   <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
                 </span>
             </a>
-            <a href="mailto:theannielin@gmail.com"> 
+            <a href="#coffee" data-toggle="modal"> 
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-coffee fa-stack-1x fa-inverse"></i>
@@ -347,7 +344,7 @@
                                 </a>
                             </div><!-- /.column-->
                             <div class="col-xs-3">
-                                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                                <a href="#modal1" data-toggle="modal">
                                     <img class="img-responsive" src="images/icons/brushupicon.png" alt="brushup">
                                 </a>
                             </div><!-- /.column-->
@@ -369,7 +366,10 @@
                     </div><!-- /.column-->
                     <div class="col-xs-8">
                         <div class="row">
-                            <div class="col-xs-2">projects
+                            <div class="col-xs-8">
+                                <br>
+                            </div><!-- /.column-->
+                            <div class="col-xs-8">
                             </div><!-- /.column-->
                         </div><!-- /.row-->
                     </div><!-- /.column-->
@@ -391,7 +391,7 @@
                   <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
                 </span>
             </a>
-            <a href="mailto:theannielin@gmail.com"> 
+            <a href="#coffee" data-toggle="modal"> 
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-coffee fa-stack-1x fa-inverse"></i>
@@ -431,10 +431,8 @@
         </div>
     </nav> <!-- /.footer -->
 
-
-
     <!-- Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -449,7 +447,7 @@
                             <!-- Project Details Go Here -->
                             <h2>Application has not yet opened!</h2>
                             <p>Please check back again!</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Window</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close Window</button>
                         </div>
                     </div>
                 </div>
@@ -457,6 +455,33 @@
         </div>
     </div>
 
+    <!-- Coffee Modal  -->
+    <div class="portfolio-modal modal fade" id="coffee" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Coffee</h2>
+                            <p>Coffee</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close Window</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- ============= Outdated Browser ============= -->
     <div id="outdated"></div>
