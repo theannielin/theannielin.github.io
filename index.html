@@ -19,14 +19,11 @@
     <meta content='harvard, annie, lin, annie lin, philadelphia' name='keywords'>
     <meta name="description" content="Hello, world! Portfolio/Personal website for and made by Annie Lin, Harvard student hailing from Philadelphia!"><meta name="description" content="Hello, world! Portfolio/Personal website for and made by Annie Lin, Harvard student hailing from Philadelphia!">
     <title>Annie Lin</title>
-    <link rel="shortcut icon" href="/images/icons/shortcuticon.png" type="image/x-icon" />
-    <link rel="icon" href="/images/icons/shortcuticon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/img/shortcut.png" type="image/x-icon" />
+    <link rel="icon" href="/img/shortcut.png" type="image/x-icon" />
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
 
     <!-- For Page Scrolling -->
     <link rel="stylesheet" type="text/css" href="fullPage.js-master/jquery.fullPage.css" />
@@ -39,8 +36,6 @@
             $('#fullpage').fullpage({
                 anchors: ['home', 'about', 'resume', 'projects', 'more'],
                 scrollOverflow: true,
-                navigation: true,
-                navigationPosition: 'right',
                 css3: true,
                 easing: 'easeOutBack',
                 scrollingSpeed: 1000,
@@ -59,8 +54,10 @@
     </script>
 
     <!-- Custom CSS -->
-    <link href="css/annie.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+
+    <!-- Font-Awesome -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Detect Outdated Browsers: http://outdatedbrowser.com -->
     <link rel="stylesheet" href="../outdatedbrowser/outdatedbrowser.min.css">    
@@ -78,220 +75,411 @@
     </script>
 
 </head>
-    
+
 <body>
-    <!-- Header Begin -->
-    <nav>
-    <div id="header" class="layer1">
-        <div id="myheader" class="main">
-            <a href="#home">
-                <div id="iamannielin"><!-- Homepage Link --></div> 
+
+    <!-- Mobile -->
+    <nav class="navbar navbar-default navbar-fixed-top head-foot hidden-sm hidden-md hidden-lg">
+        <div class="container text-center" style="font-size:13px;">
+            <br><br><br>
+            <h1>HI, I'M ANNIE LIN</h1>
+            <a href="mailto:theannielin@gmail.com"> 
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
             </a>
-            <div id="icons">    
-                <a href="mailto:theannielin@gmail.com"> 
-                    <div id="email"><!-- E-mail: theannielin@gmail.com --></div> 
+            <a href="http://github.com/theannielin" target="_blank"> 
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+            <a href="http://www.linkedin.com/in/theannielin/" target="_blank"> 
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+            <br>
+            <a href="http://www.instagram.com/theannielin" target="_blank"> 
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+            <a href="http://www.thelittleorphanannie.tumblr.com/" target="_blank"> 
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-tumblr fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+            <a href="http://www.youtube.com/channel/UC4xmxjVcO3qGnQ7Y_hZlDnw" target="_blank"> 
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                </span>
+            </a><br><br>
+            <a class="btn btn-default btn-sm" href="#coffee" data-toggle="modal"> 
+                <i class="fa fa-coffee"></i> 
+                Coffee Appointments
+            </a>
+            <br><br>
+            <p style="font-family:caviardreams; color: #666;">TO VIEW MORE,<br> 
+                PLEASE USE A WIDER SCREEN/<br>NON-MOBILE DEVICE</p>
+        </div>
+    </nav> <!-- /.mobile-->
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top head-foot hidden-xs">
+        <div class="container text-center">
+            <br>
+            <div style="font-size:30px; font-family: passiontea;">
+                <a class="page-scroll" href="#about">about</a> | 
+                <a class="page-scroll" href="#resume">resume</a> 
+                <a class="page-scroll" href="#home" id="cog">
+                    <i class="fa fa-cog fa-spin fa-2x"></i>
                 </a>
-                <a href="http://www.linkedin.com/in/theannielin/"> 
-                    <div id="linkedin"><!-- LinkedIn: www.linkedin.com/in/theannielin/ --></div> 
-                </a>
-                <a href="http://www.facebook.com/the.annie.lin"> 
-                    <div id="facebook"><!-- Facebook: www.facebook.com/the.annie.lin --></div> 
-                </a>
-                <a href="http://www.instagram.com/theannielin"> 
-                    <div id="instagram"><!-- Instagram: www.instagram.com/theannielin --></div> 
-                </a>
-                <a href="http://www.thelittleorphanannie.tumblr.com/"> 
-                    <div id="tumblr"><!-- Tumblr: www.thelittleorphanannie.tumblr.com/ --></div> 
-                </a>
-                <a href="http://www.youtube.com/channel/UC4xmxjVcO3qGnQ7Y_hZlDnw"> 
-                    <div id="youtube"><!-- YouTube: www.youtube.com/channel/UC4xmxjVcO3qGnQ7Y_hZlDnw --></div> 
-                </a>
+                <a class="page-scroll" href="#projects">projects</a> | 
+                <a class="page-scroll" href="#more">more</a>
             </div>
-            <div id="navbar">
-                <ul id="navtag" class="nav navbar-nav navbar-right">
-                    <li id="navigation" class=><a href="#about">about</a></li>
-                    <li id="navigation"><a href="#resume">resume</a></li>
-                    <li id="navigation"><a href="#projects">projects</a></li>
-                    <li id="navigation"><a href="#more">more</a></li>
-                </ul>
-            </div>
-            <div id="scissors"></div>
-            <div id="line"></div>
-        </div> 
-    </div>
-    <nav>
+            <div class="row">
+                <div class="col-md-2">
+                    <!-- empty column-->
+                </div><!-- /.column-->
+                <div class="col-md-8">
+                    <hr>
+                </div><!-- /.column-->
+                <div class="col-md-2">
+                    <!-- empty column-->
+                </div><!-- /.column-->
+            </div><!-- /.row-->
+        </div>
+    </nav> <!-- /.header -->
+
+
+    <div id="fullpage" class="hidden-xs">
         
-    <!-- Header End -->
-    <!-- Footer Begin -->
-    <div id="footer" class="layer1">
-        <div id="myfooter" class="main">
-            <br>
-            <p style="font-size:13px; font-family:caviardreams"> { All content &copy Annie Lin }</p>
-            <br>
-        </div> 
-    </div>
-    <!-- Footer End -->
-    <!-- Page Scroller Begin -->
-    <div id="fullpage" class="layer2">
-        <!-- Home Begin -->
+        <!-- Home -->
         <div class="section">
-            <div id="homedrawing">
-                <div id="emptytable"></div>
-                <a href="#about"><div id="homeabout"></div></a>
-                <a href="#resume"><div id="homeresume"></div></a>
-                <a href="#work"><div id="homework"></div></a>
-                <a href="#blog"><div id="homeblog"></div></a>
-            </div>
-        </div>
-        <!-- Home End -->
-        <!-- About Begin -->
+            <div class="container">
+                <img class="img-responsive" src= "img/table.png" width="500" height="475" style="margin: 0 auto;" usemap="#table" alt="home">
+                <map name="table">
+                    <area shape="rect" coords="250,200,325,230" href="#about" alt="about">
+                    <area shape="rect" coords="115,140,190,175" href="#resume" alt="resume">
+                    <area shape="rect" coords="200,80,275,125" href="#projects" alt="projects">
+                    <area shape="rect" coords="340,125,400,160" href="#more" alt="more">
+                </map>
+            </div><!-- /.container-->
+        </div><!-- /.section-->
+
+        <!-- About -->
         <div class="section">
-            <div id="aboutmain">
-                <div class="col1about">
-                    <div id="aboutimage"><!-- About Image --></div> 
-                </div>
-                <div class="col2about">  
-                    <h1>SUMMARY</h1>
-                    <p>Hi! I'm Annie Lin aka the girl with bangs. 
-                        <br> 
+            <div class="container">
+                <!-- Large Screens -->
+                <div class="row hidden-sm hidden-md">
+                    <div class="col-xs-1">
+                        <!-- empty column-->
+                    </div><!-- /.column-->
+                    <div class="col-xs-6">
+                        <img class="img-responsive" src= "img/about.png" alt="about">
+                    </div><!-- /.column-->
+                    <div class="col-xs-4">
+                        <h1>SUMMARY</h1>
+                        <p>Hi! I'm Annie Lin aka the girl with bangs.<br> 
                         NYC-born and Philly-raised. Alumni of the 272nd class of Central. (2nd oldest public high school in the country!) Proud bearer of a simian line. Current sophomore at Harvard studying CS. Artist, Scholar, & so much more!
-                    </p>
-                    <br>
-                    <h1>I ENJOY:</h1>
-                    <ul class="list">
-                      <li>pineapples</li>
-                      <li>franz kafka</li>
-                      <li>waterman butterfly maps</li>
-                      <li>minimalist posters</li>
-                      <li>sriracha</li>
-                      <li>wes anderson films</li>
-                      <li>rubik's cubes</li>
-                      <li>arabesques</li>
-                      <li>making peace signs</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
-        <!-- Resume Begin -->
-        <div class="section">
-            <div id="resumepage">
-                <a href="works/AnnieLinResume.pdf" target="_blank">
-                    <div style="width: 830px; height: 30px; margin-left: auto; margin-right: auto; display: block;">
-                        <div id="downloadresume">
-                        Download Detailed Resume
-                        </div>
-                    </div>
-                </a>
-                <br>
-                <div class="main" style="font-family: caviardreams;">
-                     <a href="#" onclick="toggle_visibility('education');"><h1 class="darker">⇓ EDUCATION </h1><a></a>
-                    <div id="education">
-                        <div class="smallfont"> Harvard College </div>
-                        <div class="smallerfont"> 
-                            Cambridge, MA | B.A. Computer Science (Expected Graduation: May 2017)
-                            <ul class="smalllist">
-                                <li>Women in Computer Science (Publicity Chair)</li>
-                                <li>First Generation Student Union (Public Relations Chair)</li>
-                                <li>Taiwanese Cultural Society (Secretary)</li>
-                                <li>Rubik's Cube Club (Secretary)</li>
-                                <li>Harvard-Radcliffe Chinese Students Association. </li>
-                            </ul>
-                        </div>
-                        <div class="smallfont"> Central High School (Only High School in U.S. to Confer Academic Degrees)</div>
-                        <div class="smallerfont">
-                            Philadelphia, PA | B.A. Graduated 3rd in class of 610. SAT I: M: 800 R: 700 W: 760. (June 2013)
-                            <ul class="smalllist">
-                                <li>Student Environmental Action Society President (3 Years)</li>
-                                <li>National Honor Society Secretary (2 Years)</li>
-                                <li>Math Club President (2 Years)</li>
-                                <li>Art With Heart (Service Organization) President (2 Years)</li>
-                                <li>Ribbon Dancing Team</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <a href="#" onclick="toggle_visibility('experience');"><h1 class="darker">⇓ WORK EXPERIENCE </h1><a></a>
-                    <div id="experience">
-                        <ul class="smalllist">
-                            <li>Center for International Exchange (Showa Women’s University)</li>
-                            <li>Ethnic Technologies, LLC</li>
-                            <li>Cabot Science Library (Harvard University)</li>
-                            <li>Boat People SOS (Summer Youth Bike and Environmental Program)</li>
-                            <li>STARTALK Chinese Academy</li>
-                            <li>White-Williams Scholars</li>
-                            <li>
+                        </p>
+                        <h1>I ENJOY:</h1>
+                        <ul class="list">
+                            <li>pineapples</li>
+                            <li>franz kafka</li>
+                            <li>waterman butterfly maps</li>
+                            <li>minimalist posters</li>
+                            <li>sriracha</li>
+                            <li>wes anderson films</li>
+                            <li>rubik's cubes</li>
+                            <li>arabesques</li>
+                            <li>making peace signs</li>
                         </ul>
+                    </div><!-- /.column-->
+                    <div class="col-xs-1">
+                        <!-- empty column-->
+                    </div><!-- /.column-->
+                </div><!-- /.row--> <!-- ./ Large Screens -->
+                <!-- Small Screens -->
+                <div class="row hidden-lg">
+                    <div class="col-xs-2">
+                        <!-- empty column-->
+                    </div><!-- /.column-->
+                    <div class="col-md-8">
+                        <h1>SUMMARY</h1>
+                        <p>Hi! I'm Annie Lin aka the girl with bangs. <br> 
+                        NYC-born and Philly-raised. Alumni of the 272nd class of Central. (2nd oldest public high school in the country!) Proud bearer of a simian line. Current sophomore at Harvard studying CS. Artist, Scholar, & so much more!
+                        </p>
+                        <h1>I ENJOY:</h1>
+                        <ul class="list">
+                            <li>pineapples</li>
+                            <li>franz kafka</li>
+                            <li>waterman butterfly maps</li>
+                            <li>minimalist posters</li>
+                            <li>sriracha</li>
+                            <li>wes anderson films</li>
+                            <li>rubik's cubes</li>
+                            <li>arabesques</li>
+                            <li>making peace signs</li>
+                        </ul>
+                    </div><!-- /.column-->
+                    <div class="col-xs-2">
+                        <!-- empty column-->
+                    </div><!-- /.column-->
+                </div><!-- /.row--> <!-- ./ Small Screens -->
+            </div><!-- /.container-->
+        </div><!-- /.section-->
+
+        <!-- Resume -->
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <!-- empty column-->
+                    </div><!-- /.column-->
+                    <div class="col-md-8">
+                        <br>
+                        <a class="btn btn-default btn-sm no-margin" href="works/AnnieLinResume.pdf" target="_blank">
+                            <i class="fa fa-download"></i> 
+                            Detailed Resume
+                        </a>
+                        <br>
+                        <h1 class="no-margin"> Harvard College </h1>
+                        <h2 class="no-margin">Cambridge, MA | A.B. Computer Science, Citation in Japanese (Expected Graduation: May 2017)</h2>
+                        <ul class="list">
+                            <li>Taiwanese Cultural Society (Co-President)</li>
+                            <li>Women in Computer Science (Publicity Chair)</li>
+                            <li>First Generation Student Union (Public Relations Chair)</li>
+                            <li>Rubik's Cube Club (Secretary)</li>
+                            <li>IMUSE (Design Chair)</li>
+                        </ul>
+                        <h1 class="no-margin">Work Experience </h1>
+                        <ul class="list">
+                            <li>Japan Digital Archives</li>
+                            <li>Cabot Science Library (Harvard University)</li>
+                            <li>Harvard Forest</li>
+                            <li>Showa Women’s University</li>
+                            <li>Ethnic Technologies, LLC</li>
+                            <li>Boat People SOS</li>
+                            <li>White-Williams Scholars</li>
+                            <li>Young Voices Monologue Festival</li>
+                        </ul>
+                        <h1 class="no-margin"> Skills </h1>
+                        <ul class="list">
+                            <li>C</li>
+                            <li>OCAML</li>
+                            <li>SQL</li>
+                            <li>PYTHON</li>
+                            <li>HTML/CSS</li>
+                            <li>Fluent Chinese (Mandarin)</li>
+                            <li>Basic German</li>
+                            <li>Elementary Japanese</li>
+                            <li>Graphic Design (Photoshop/Illustrator)</li>
+                        </ul>
+
+                    </div><!-- /.column-->
+                    <div class="col-xs-2">
+                        <!-- empty column-->
+                    </div><!-- /.column-->
+                </div><!-- /.row-->
+            </div><!-- /.container-->
+        </div><!-- /.section-->
+
+        <!-- Projects -->
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <!-- empty column-->
+                    </div><!-- /.column-->
+                    <div class="col-xs-8">
+                        <br>
+                        <a class="btn btn-default btn-sm no-margin" href="works/AnnieLinResume.pdf" target="_blank">
+                            <i class="fa fa-github-alt"></i> 
+                            Fork Me on Github
+                        </a>
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <a href="http://brushup.me/" target="_blank">
+                                    <img class="img-responsive" src="img/proj/brushupicon.png" alt="brushup" onmouseover="this.src='images/icons/plateicon.png';" onmouseout="this.src='images/icons/brushupicon.png';">
+                                </a>
+                            </div><!-- /.column-->
+                            <div class="col-xs-3">
+                                <a href="http://brushup.me/" target="_blank">
+                                    <img class="img-responsive" src="img/proj/brushupicon.png" alt="brushup">
+                                </a>
+                            </div><!-- /.column-->
+                            <div class="col-xs-3">
+                                <a href="http://brushup.me/" target="_blank">
+                                    <img class="img-responsive" src="img/proj/brushupicon.png" alt="brushup">
+                                </a>
+                            </div><!-- /.column-->
+                            <div class="col-xs-3">
+                                <a href="http://brushup.me/" target="_blank">
+                                    <img class="img-responsive" src="img/proj/brushupicon.png" alt="brushup">
+                                </a>
+                            </div><!-- /.column-->
+                        </div><!-- /.row-->
+                        <br>
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <a href="http://brushup.me/" target="_blank">
+                                    <img class="img-responsive" src="img/proj/brushupicon.png" alt="brushup">
+                                </a>
+                            </div><!-- /.column-->
+                            <div class="col-xs-3">
+                                <a href="http://brushup.me/" target="_blank">
+                                    <img class="img-responsive" src="img/proj/brushupicon.png" alt="brushup">
+                                </a>
+                            </div><!-- /.column-->
+                            <div class="col-xs-3">
+                                <a href="http://brushup.me/" target="_blank">
+                                    <img class="img-responsive" src="img/proj/brushupicon.png" alt="brushup">
+                                </a>
+                            </div><!-- /.column-->
+                            <div class="col-xs-3">
+                                <a href="#modal1" data-toggle="modal" data-backdrop="false">
+                                    <img class="img-responsive" src="img/proj/brushupicon.png" alt="brushup">
+                                </a>
+                            </div><!-- /.column-->
+                        </div><!-- /.row-->
+                    </div><!-- /.column-->
+                    <div class="col-xs-2">
+                        <!-- empty column-->
+                    </div><!-- /.column-->
+                </div><!-- /.row-->
+            </div><!-- /.container-->
+        </div><!-- /.section-->
+
+        <!-- More -->
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <!-- empty column-->
+                    </div><!-- /.column-->
+                    <div class="col-xs-8 text-center" style="font-size: 25px;">
+                        <br>
+                        <h1> SEE THE WORLD THROUGH MY EYES</h1>
+                        <a class="btn btn-default btn-sm" href="#coffee" data-toggle="modal"> 
+                            <i class="fa fa-coffee"></i> 
+                            Coffee Appointments
+                        </a>
+                        <br>
+                        <br>
+                        <a href="http://www.instagram.com/theannielin" target="_blank"> 
+                            <span class="fa-stack fa-lg">
+                              <i class="fa fa-circle fa-stack-2x"></i>
+                              <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="http://thelittleorphanannie.tumblr.com/archive" target="_blank"> 
+                            <span class="fa-stack fa-lg">
+                              <i class="fa fa-circle fa-stack-2x"></i>
+                              <i class="fa fa-tumblr fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="http://www.youtube.com/channel/UC4xmxjVcO3qGnQ7Y_hZlDnw" target="_blank"> 
+                            <span class="fa-stack fa-lg">
+                              <i class="fa fa-circle fa-stack-2x"></i>
+                              <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <br>
+                        <img src="img/eyes.png" style="width: 400px; margin: 0 auto;"/>
+                    </div><!-- /.column-->
+                    <div class="col-xs-2">
+                        <!-- empty column-->
+                    </div><!-- /.column-->
+                </div><!-- /.row-->
+            </div><!-- /.container-->
+        </div><!-- /.section-->
+
+    </div><!-- /.fullpage-->
+
+    <!-- Footer -->
+    <nav class="navbar navbar-default navbar-fixed-bottom head-foot hidden-xs">
+        <div class="container text-center" style="font-size:10px;">
+            <a href="mailto:theannielin@gmail.com"> 
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+            <a href="http://github.com/theannielin" target="_blank"> 
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+            <a href="http://www.linkedin.com/in/theannielin/" target="_blank"> 
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+            <p style="font-family:caviardreams; color: #666;">{ All content &copy Annie Lin }</p>
+        </div>
+    </nav> <!-- /.footer -->
+
+    <!-- Modal 1 -->
+    <div class="portfolio-modal modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
                     </div>
-                    <a href="#" onclick="toggle_visibility('skills');"><h1 class="darker">⇓ SKILLS</h1><a></a>
-                    <ul class="smalllist" id="skills">
-                        <li>Javascript</li>
-                        <li>C</li>
-                        <li>PHP</li>
-                        <li>OCAML</li>
-                        <li>PYTHON</li>
-                        <li>HTML/CSS</li>
-                        <li>Fluent Chinese (Mandarin)</li>
-                        <li>Basic German</li>
-                        <li>Elementary Japanese</li>
-                        <li>Graphic Design (Photoshop/Illustrator)</li>
-                    </ul>
                 </div>
             </div>
-        </div>
-        <!-- Resume End -->
-        <!-- Work Begin -->
-        <div class="section">
-            <div class="main">
-                <div width="800px"><a href="http://github.com/theannielin" target="_blank"><div id="forkme">FORK ME ON GITHUB!</div></a></div>
-                <br><br>
-                <div style="width: 100%; display: table;">
-                    <div style="display: table-row">
-                        <div class="workblocks">
-                            <a href="http://brushup.me/" target="_blank"><img class="workimage" src="images/icons/brushupicon.png"/></a>
-                        </div>
-                        <div class="workblocks">
-                            <a href="http://www.hcs.harvard.edu/firstgen/" target="_blank"><img class="workimage" src="images/icons/firstgenicon.png"/></a>
-                        </div>
-                        <div class="workblocks">
-                            <a href="works/cs51project.zip"><img class="workimage" src="images/icons/plateicon.png"/></a>
-                        </div>
-                        <div class="workblocks">
-                                <iframe style="border:none; width: 190px; height: 190px;" src="http://files.photosnack.com/iframejs/embed.html?hash=pt9529ii&t=1400885491" width="350" height="350" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" ></iframe>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h1>Design/Art</h1>
+                            <iframe style="border:none;" src="http://files.photosnack.com/iframejs/embed.html?hash=pt9529ii&t=1400885491" width="350" height="350" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" ></iframe>
                             <br>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close Window</button>
                         </div>
                     </div>
                 </div>
-                <ul id="workdescription">
-                    <li>Brushup.Me</li>
-                    <li>Harvard First Gen Website</li>
-                    <li>Plate Recognition (Terminal)</li>
-                    <li>Artwork</li>
-                </ul>
             </div>
         </div>
-        <!-- Work End -->
-        <!-- Blog Begin -->
-        <div class="section">
-            <div class="main">
-                <div class="col1blog">
-                    <a href="http://www.theannielin.blogspot.com">
-	                    <p id="eyes"> LOOK AT THE WORLD THROUGH <br>MY EYES</p>
-	                    <br>
-	                    <p id="eyes"> JUST SCROLL </p>
-	                    <p id="eyestiny"> (within the box: click and then use the down arrow) </p>
-	                    <img src="images/eyes.png" style="width: 260px;"/>
-                    </a>
+    </div>
+
+    <!-- Coffee Modal  -->
+    <div class="portfolio-modal modal fade" id="coffee" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
                 </div>
-                <div class="col2blog">  
-                    <div class="frame-container border">
-                        <iframe width="620" height="350" src="http://theannielin.blogspot.com/" frameborder="0"></iframe>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Coffee</h2>
+                            <p>Coffee 2</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close Window</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Blog End -->
     </div>
-    <!-- Page Scroller End -->
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- ============= Outdated Browser ============= -->
     <div id="outdated"></div>
@@ -326,5 +514,5 @@
         });
     </script>
 </body>
+
 </html>
-<!-- Congrats! You have reached the end! -->
