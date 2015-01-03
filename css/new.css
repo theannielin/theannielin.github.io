@@ -4,6 +4,10 @@
   .non-mobile {display: none;}
 }
 
+@media only screen and (min-height: 500px) {
+  .mobile {display: none;}
+}
+
 
 /* Fonts */
 @font-face {
