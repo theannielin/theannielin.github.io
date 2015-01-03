@@ -88,7 +88,7 @@
                   <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
                 </span>
             </a>
-            <a href="#coffee" data-toggle="modal"> 
+            <a href="#coffee" data-toggle="modal" class="coffeelink"> 
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-coffee fa-stack-1x fa-inverse"></i>
@@ -391,7 +391,7 @@
                   <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
                 </span>
             </a>
-            <a href="#coffee" data-toggle="modal"> 
+            <a href="#coffee" data-toggle="modal" class="coffeelink"> 
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-coffee fa-stack-1x fa-inverse"></i>
@@ -456,23 +456,27 @@
     </div>
 
     <!-- Coffee Modal  -->
-    <!-- Modal -->
-    <div class="modal fade" id="coffee" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
+    <div class="portfolio-modal modal fade" id="coffee" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Coffee</h2>
+                            <p>Coffee</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close Window</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
 
