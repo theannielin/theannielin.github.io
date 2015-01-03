@@ -1,13 +1,5 @@
 /* Main CSS sheet for www.anniel.in 16a085 */
 
-.mobile {display: none;}
-
-@media only screen and (max-height: 500px) {
-  .non-mobile {display: none;}
-  .mobile {display: none;}
-}
-
-
 /* Fonts */
 @font-face {
 	font-family: passiontea;
