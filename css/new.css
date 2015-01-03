@@ -1,5 +1,14 @@
 /* Main CSS sheet for www.anniel.in 16a085 */
 
+
+
+/*
+                            <area shape="rect" coords="0,0,-20,-20" href="#resume" alt="resume">
+                            <area shape="rect" coords="0,0,20,20" href="#projects" alt="projects">
+                            <area shape="rect" coords="0,0,20,20" href="#more" alt="more">
+*/
+
+/* Fonts */
 @font-face {
 	font-family: passiontea;
 	src: url(/fonts/PassionTea.ttf);
@@ -15,11 +24,13 @@
 	src: url(/fonts/CaviarDreamsBold.ttf);
 }
 
+/* Makes the default Bootstrap navbar white */
 .head-foot {
 	background-color: #fff;
 	border: none;
 }
 
+/* Scissor line for the header */
 hr { 
   border-top: 1.5px dashed #666; 
 } 
@@ -35,12 +46,18 @@ hr:after {
   font-size: 18px; 
 }
 
+/* Links */
 a:link {text-decoration:none; color: #666;}
 a:visited {text-decoration:none; color: #666;}
 a:hover {text-decoration:none; color: #16a085;}
 a:active {text-decoration:none; color: #666;}
 
+/* The cog in the middle of header */
 #cog:link {text-decoration:none; color: #16a085;}
 #cog:visited {text-decoration:none; color: #16a085;}
 #cog:hover {text-decoration:none; color: #16a085;}
 #cog:active {text-decoration:none; color: #16a085}
+
+area {
+	 border: 25px solid navy;
+}
