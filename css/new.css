@@ -1,13 +1,5 @@
 /* Main CSS sheet for www.anniel.in 16a085 */
 
-
-
-/*
-                            <area shape="rect" coords="0,0,-20,-20" href="#resume" alt="resume">
-                            <area shape="rect" coords="0,0,20,20" href="#projects" alt="projects">
-                            <area shape="rect" coords="0,0,20,20" href="#more" alt="more">
-*/
-
 /* Fonts */
 @font-face {
 	font-family: passiontea;
@@ -57,7 +49,3 @@ a:active {text-decoration:none; color: #666;}
 #cog:visited {text-decoration:none; color: #16a085;}
 #cog:hover {text-decoration:none; color: #16a085;}
 #cog:active {text-decoration:none; color: #16a085}
-
-area {
-	 border: 25px solid navy;
-}
