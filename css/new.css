@@ -60,10 +60,10 @@ hr:after {
 }
 
 /* Links */
-a:link {text-decoration:none; border: none; color: #666;}
-a:visited {text-decoration:none; border: none; color: #666;}
-a:hover {text-decoration:none; border: none; color: #16a085;}
-a:active {text-decoration:none; border: none; color: #666;}
+a:link {text-decoration:none; color: #666;}
+a:visited {text-decoration:none; color: #666;}
+a:hover {text-decoration:none; color: #16a085;}
+a:active {text-decoration:none; color: #666;}
 
 /* The cog in the middle of header */
 #cog:link {text-decoration:none; color: #16a085;}
