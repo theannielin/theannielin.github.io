@@ -1,4 +1,4 @@
-/* Main CSS sheet for www.anniel.in */
+/* Main CSS sheet for www.anniel.in 16a085 */
 
 @font-face {
 	font-family: passiontea;
@@ -21,7 +21,7 @@
 }
 
 hr { 
-  border-top: 1.5px dashed #8c8b8b; 
+  border-top: 1.5px dashed #666; 
 } 
 
 hr:after { 
@@ -31,7 +31,16 @@ hr:after {
   top: -13px; 
   padding: 0 3px; 
   background: #fff; 
-  color: #8c8b8b; 
+  color: #666; 
   font-size: 18px; 
 }
 
+a:link {text-decoration:none; color: #666;}
+a:visited {text-decoration:none; color: #666;}
+a:hover {text-decoration:none; color: #16a085;}
+a:active {text-decoration:none; color: #666;}
+
+#cog:link {text-decoration:none; color: #16a085;}
+#cog:visited {text-decoration:none; color: #16a085;}
+#cog:hover {text-decoration:none; color: #16a085;}
+#cog:active {text-decoration:none; color: #16a085}
