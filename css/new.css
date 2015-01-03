@@ -12,15 +12,17 @@
 }
 
 /* Text Attributes */
-h3 {
+h1 {
 	font-family: caviardreams;
 	font-weight: 900;
 	color: #aaa; 
+	font-size: 20px;
 }
 
 p {  
 	font-family: caviardreams;
 	color: #555; 
+	font-size: 15px;
 }
 
 /* Makes the default Bootstrap navbar white */
@@ -63,6 +65,7 @@ display: inline-block;
 font-family: caviardreams;
 background: #aaa;
 color: #fff;
+font-size: 15px; 
 padding: 2px 2px;
 margin: 0 0px 4px 0;
 }
