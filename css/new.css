@@ -11,9 +11,16 @@
 	src: url(/fonts/CaviarDreams.ttf);
 }
 
-@font-face {
-	font-family: caviardreamsbold;
-	src: url(/fonts/CaviarDreamsBold.ttf);
+/* Text Attributes */
+h3 {
+	font-family: caviardreams;
+	font-weight: 900;
+	color: #aaa; 
+}
+
+p {  
+	font-family: caviardreams;
+	color: #555; 
 }
 
 /* Makes the default Bootstrap navbar white */
@@ -49,3 +56,18 @@ a:active {text-decoration:none; color: #666;}
 #cog:visited {text-decoration:none; color: #16a085;}
 #cog:hover {text-decoration:none; color: #16a085;}
 #cog:active {text-decoration:none; color: #16a085}
+
+/* Lists */
+.list li {
+display: inline-block;
+font-family: caviardreams;
+background: #aaa;
+color: #fff;
+padding: 2px 2px;
+margin: 0 0px 4px 0;
+}
+
+.list {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+}
