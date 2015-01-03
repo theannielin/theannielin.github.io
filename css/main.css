@@ -11,6 +11,12 @@
 	src: url(/fonts/CaviarDreams.ttf);
 }
 
+/* Center column */
+.col-center{
+    float: none;
+    margin: 0 auto;
+}
+
 /* Text Attributes */
 .no-margin {
 	margin: 0px 0px 5px 0px;
