@@ -1,5 +1,4 @@
 /* Main CSS sheet for www.anniel.in #16a085 */
-
 /* Fonts */
 @font-face {
 	font-family: passiontea;
@@ -70,6 +69,21 @@ a:active {text-decoration:none; color: #666;}
 #cog:visited {text-decoration:none; color: #16a085;}
 #cog:hover {text-decoration:none; color: #16a085;}
 #cog:active {text-decoration:none; color: #16a085}
+
+
+/* Images for projects */
+.proj {
+    opacity: .5;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-filter: grayscale(100%);
+}
+
+.proj:hover {
+    -webkit-filter: grayscale(0%);
+}
+
+
 
 /* Lists */
 .list li {
