@@ -80,6 +80,7 @@ a:active {text-decoration:none; color: #666;}
 }
 
 .proj:hover {
+    opacity: .7;
     -webkit-filter: grayscale(0%);
 }
 
