@@ -1,0 +1,26 @@
+/* Links */
+a:link {text-decoration:none}
+a:visited {text-decoration:none}
+a:hover {text-decoration:none}
+a:active {text-decoration:none}
+
+/* Button Colors */
+.air {color: #6b797a}
+.air:hover {color: #86999a}
+.bio {color: #1c9739}
+.bio:hover {color: #22b847}
+.history {color: #df6c08}
+.history:hover {color: #f0740a}
+.people {color: #66098e}
+.people:hover {color: #7f09b3}
+.soil {color: #98672d}
+.soil:hover {color: #c1833b}
+.water {color: #2684d4}
+.water:hover {color: #2892eb}
+
+body {
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+
