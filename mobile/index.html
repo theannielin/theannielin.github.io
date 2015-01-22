@@ -1,0 +1,1621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This interactive site ties together the rich history of the Fisher Museum dioramas and the current research being done at Harvard Forest.">
+    <meta name="author" content="Harvard Forest">
+    <meta name="robots" content="NOODP">
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon" />
+    <link rel="icon" href="img/logo.jpg" type="image/x-icon" />
+
+    <title>Interactive Dioramas</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- Font-Awesome Icons -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Quiz JavaScript -->
+    <script language="JavaScript">
+    <!--
+
+    var numQues = 4;
+    var numChoi = 3;
+
+    var answers = new Array(4);
+    answers[0] = "White Pine";
+    answers[1] = "World War I";
+    answers[2] = "1830";
+    answers[3] = "Beaver";
+
+    function getScore(form) {
+      var score = 0;
+      var currElt;
+      var currSelection;
+
+      for (i=0; i<numQues; i++) {
+        currElt = i*numChoi;
+        for (j=0; j<numChoi; j++) {
+          currSelection = form.elements[currElt + j];
+          if (currSelection.checked) {
+            if (currSelection.value == answers[i]) {
+              score++;
+              break;
+            }
+          }
+        }
+      }
+
+      score = Math.round(score/numQues*100);
+      form.percentage.value = score + "%";
+
+      var correctAnswers = "";
+      for (i=1; i<=numQues; i++) {
+        correctAnswers += i + ". " + answers[i-1] + "\r\n";
+      }
+      form.solutions.value = correctAnswers;
+
+    }
+
+    // -->
+    </script>
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- The Main Display -->
+    <section>
+        <div class="container">
+            <!-- Beginning of Row 1 -->
+            <div class="row text-center">
+                <!-- Beginning of Intro -->
+                <div class="col-sm-12">
+                    <br><a href="http://harvardforest.fas.harvard.edu/" target="_blank"><img class="img-responsive center-img" src="img/logo.jpg"></a>
+                    
+                    <h1>The Changing Forest: Viewing the Harvard Forest Dioramas</h1><hr>
+                    <p>In this interactive module, we hope to identify and illustrate relevant themes within the Harvard Forest dioramas and connect those themes to research projects today. For each diorama, click/tap these buttons to find out more.</p>
+                    <ul class="list">
+                      <li><a class="air"> 
+                          <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-cloud fa-stack-1x fa-inverse"></i>
+                          </span>
+                      </a> Atmosphere</li>
+                      <li><a class="bio"> 
+                          <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-leaf fa-stack-1x fa-inverse"></i>
+                          </span>
+                      </a> Biodiversity</li>
+                      <li><a class="history"> 
+                          <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-history fa-stack-1x fa-inverse"></i>
+                          </span>
+                      </a> History</li>
+                      <li><a class="people"> 
+                          <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                          </span>
+                      </a> Land Use</li>
+                      <li><a class="soil"> 
+                          <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-fire fa-stack-1x fa-inverse"></i>
+                          </span>
+                      </a> Soil</li>
+                      <li><a class="water"> 
+                          <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-tint fa-stack-1x fa-inverse"></i>
+                          </span>
+                      </a> Water</li>
+                    </ul>
+                    <hr>
+                </div>
+                <!-- End of Intro -->
+            </div>
+            <!-- Beginning of Row 1 -->
+            <div class="row text-center">
+                <!-- Beginning of 1700 -->
+                <div class="col-sm-3">
+                    <h2>1700</h2>
+                    <img class="img-responsive" src= "img/1700.jpg" alt="1700 Diorama">
+                    <a class="air" data-toggle="modal" href="#1700air"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-cloud fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="bio" data-toggle="modal" href="#1700bio"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-leaf fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="history" data-toggle="modal" href="#1700history"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-history fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="people" data-toggle="modal" href="#1700people"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="soil" data-toggle="modal" href="#1700soil"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-fire fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="water" data-toggle="modal" href="#1700water"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-tint fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <p><b>Pre-Settlement Forest: A Varied Landscape</b><br>In the pre-settlement forest, natural variation across sites and ongoing natural and human disturbance processes led to differences in age, density, size, and species of trees across a wide range of sites. Notice the large trees and large fallen trunks on the right in the diorama. Compare them with the smaller, younger trees on the left.</p>
+                </div>
+                <!-- End of 1700 -->
+                <!-- Beginning of 1740 -->
+                <div class="col-sm-3">
+                    <h2>1740</h2>
+                    <img class="img-responsive" src= "img/1740.jpg" alt="1740 Diorama">
+                    <a class="air" data-toggle="modal" href="#1740air"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-cloud fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="bio" data-toggle="modal" href="#1740bio"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-leaf fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="history" data-toggle="modal" href="#1740history"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-history fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="people" data-toggle="modal" href="#1740people"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="soil" data-toggle="modal" href="#1740soil"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-fire fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="water" data-toggle="modal" href="#1740water"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-tint fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <p><b>An Early Settler Clears a Homestead</b><br>For most of the New England region, European settlement occurred largely during the 18th century. Through forest clearing, hunting, and trapping, the abundance of many species changed rapidly and the wilderness was gradually transformed into a domesticated rural landscape.</p>
+                </div>
+                <!-- End of 1740 -->
+                <!-- Beginning of 1830 -->
+                <div class="col-sm-3">
+                    <h2>1830</h2>
+                    <img class="img-responsive" src= "img/1830.jpg" alt="1830 Diorama">
+                    <a class="air" data-toggle="modal" href="#1830air"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-cloud fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="bio" data-toggle="modal" href="#1830bio"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-leaf fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="history" data-toggle="modal" href="#1830history"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-history fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="people" data-toggle="modal" href="#1830people"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="soil" data-toggle="modal" href="#1830soil"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-fire fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="water" data-toggle="modal" href="#1830water"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-tint fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <p><b>Height of Forest Clearing and Agriculture</b><br>The peak of deforestation and agricultural activity across most of New England occurred from 1830 to 1880. Across much of New England, 60 to 80 percent of the land was cleared for pasture, tillage, orchards and buildings. Small remaining areas of woodland were subjected to frequent cuttings for lumber and fuel. </p>
+                </div>
+                <!-- End of 1830 -->
+                <!-- Beginning of 1850 -->
+                <div class="col-sm-3">
+                    <h2>1850</h2>
+                    <img class="img-responsive" src= "img/1850.jpg" alt="1850 Diorama">
+                    <a class="air" data-toggle="modal" href="#1850air"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-cloud fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="bio" data-toggle="modal" href="#1850bio"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-leaf fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="history" data-toggle="modal" href="#1850history"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-history fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="people" data-toggle="modal" href="#1850people"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="soil" data-toggle="modal" href="#1850soil"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-fire fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="water" data-toggle="modal" href="#1850water"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-tint fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <p><b>Farm Abandonment</b><br>Beginning in the mid-1800s and continuing for more than a century, farming declined on a broad scale across New England. Abandoned pastures and fields rapidly developed into forests. In central Massachusetts and across much of central New England these forests were dominated by white pines.</p>
+                </div>
+                <!-- End of 1850 -->
+            </div>
+            <!-- End of Row 2 -->
+            <!-- Beginning of Row 3 -->
+            <div class="row text-center">
+                <!-- Beginning of 1910 -->
+                <div class="col-sm-3">
+                    <h2>1910</h2>
+                    <img class="img-responsive" src= "img/1910.jpg" alt="1910 Diorama">
+                    <a class="air" data-toggle="modal" href="#1910air"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-cloud fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="bio" data-toggle="modal" href="#1910bio"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-leaf fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="history" data-toggle="modal" href="#1910history"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-history fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="people" data-toggle="modal" href="#1910people"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="soil" data-toggle="modal" href="#1910soil"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-fire fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="water" data-toggle="modal" href="#1910water"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-tint fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <p><b>"Old-Field" White Pine Forest on Abandoned Farmland</b><br>As the "old-field" stands of white pine reached middle age, it became evident that they contained a valuable and rapidly growing crop of second-growth timber. As this white pine became marketable portable sawmills appeared across central New England. One of the most common and valuable uses of these pines was for "box boards" used to make shipping containers prior to the development of corrugated cardboard in the 1930s.</p>
+                </div>
+                <!-- End of 1910 -->
+                <!-- Beginning of 1915 -->
+                <div class="col-sm-3">
+                    <h2>1915</h2>
+                    <img class="img-responsive" src= "img/1915.jpg" alt="1915 Diorama">
+                    <a class="air" data-toggle="modal" href="#1915air"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-cloud fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="bio" data-toggle="modal" href="#1915bio"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-leaf fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="history" data-toggle="modal" href="#1915history"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-history fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="people" data-toggle="modal" href="#1915people"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="soil" data-toggle="modal" href="#1915soil"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-fire fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="water" data-toggle="modal" href="#1915water"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-tint fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <p><b>"Old-Field" White Pine is Succeeded by Hardwoods</b><br>Clear-cutting of the "old-field" white pines led to the succession of mixed hardwoods across much of the landscape. The inability of white pine to sprout after being cut, in contrast to the prolific sprouting of our hardwood species, facilitated this succession. Patterns of succession enhanced the diversity of forest types, providing a wide range of wildlife habitats.</p>
+                </div>
+                <!-- End of 1915 -->
+                <!-- Beginning of 1930 -->
+                <div class="col-sm-3">
+                    <h2>1930</h2>
+                    <img class="img-responsive" src= "img/1930.jpg" alt="1930 Diorama">
+                    <a class="air" data-toggle="modal" href="#1930air"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-cloud fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="bio" data-toggle="modal" href="#1930bio"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-leaf fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="history" data-toggle="modal" href="#1930history"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-history fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="people" data-toggle="modal" href="#1930people"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="soil" data-toggle="modal" href="#1930soil"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-fire fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="water" data-toggle="modal" href="#1930water"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-tint fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <p><b>A Vigorously Growing Forest of Hardwoods</b><br>One of the characteristic features of the hardwood forest that developed after the clear-cutting of the "old-field" white pines is the predominance of multi-stemmed sprout clumps. Fast-growing species that sprout prolifically -- red oak, red maple, white ash, birches, and black cherry -- are strongly represented. Red oaks are just beginning to overtop the other trees in this view.</p>
+                </div>
+                <!-- End of 1930 -->
+                <!-- Beginning of Now -->
+                <div class="col-sm-3">
+                    <h2>Now</h2>
+                    <img class="img-responsive" src= "img/2000.jpg" alt="Now">
+                    <a class="air" data-toggle="modal" href="#nowair"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-cloud fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="bio" data-toggle="modal" href="#nowbio"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-leaf fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="history" data-toggle="modal" href="#nowhistory"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-history fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="people" data-toggle="modal" href="#nowpeople"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="soil" data-toggle="modal" href="#nowsoil"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-fire fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a class="water" data-toggle="modal" href="#nowwater"> 
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-tint fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <p><b>The Modern Forest Landscape</b><br>In the period since the dioramas were constructed, the trends in forest development illustrated in the 1930 model have continued. Remarkable expanses of maturing forest extend across a densely populated landscape in the northeastern United States.</p>
+                </div>
+                <!-- End of Now -->
+            </div>
+            <!-- End of Row 3 -->
+            <!-- Beginning of Row 4 -->
+            <div class="row text-center">
+                <!-- Beginning of Quiz 
+                Made with http://www.internetraining.com/Templates/CKQuiz/ 
+                (Javascript in the head)  -->
+                <div class="col-sm-12">
+                    <hr>
+                    <h1>Quiz</h1>
+                    <form name="quiz">
+                        1. Which tree species began to take over the forest once settlers abandoned their farms?<br>
+                        <input type="radio" name="q1" value="Red Oak"> Red Oak<br>
+                        <input type="radio" name="q1" value="White Pine"> White Pine<br>
+                        <input type="radio" name="q1" value="Sugar Maple"> Sugar Maple<br><br>
+
+                        2. Which was NOT a reason why farming declined in the mid-1800s?<br>
+                        <input type="radio" name="q2" value="World War I"> World War I<br>
+                        <input type="radio" name="q2" value="The Industrial Revolution"> The Industrial Revolution<br>
+                        <input type="radio" name="q2" value="Discovery of Gold in California"> Discovery of Gold in California<br><br>
+
+                        3. What year was the height of forest clearing and agriculture?<br>
+                        <input type="radio" name="q3" value="1830"> 1830<br>
+                        <input type="radio" name="q3" value="1850"> 1850<br>
+                        <input type="radio" name="q3" value="1740"> 1740<br><br>
+
+                        4. Which animal population declined during the 1700’s?<br>
+                        <input type="radio" name="q4" value="Meadowlark"> Meadowlark<br>
+                        <input type="radio" name="q4" value="Bobolink"> Bobolink<br>
+                        <input type="radio" name="q4" value="Beaver"> Beaver<br><br>
+
+                        <input type="button" value="Get score" onClick="getScore(this.form)">
+                        <input type="reset" value="Clear"><br><br>
+                        Score = <input type=text size=15 name="percentage"><br>
+                        Correct answers:<br>
+                        <textarea name="solutions" wrap="virtual" rows="4" cols="40"></textarea>
+                    </form>
+                </div>
+            </div>
+            <!-- Beginning of Row 4 -->
+        </div><!-- End of Container -->
+    </section><!-- End of Section -->
+
+
+    <footer>
+        <div class="container text-center">
+            <h6>
+              <br><br>
+              <hr>
+              <b>Adapted from “New England Forests Through Time: Insights from the Harvard Forest Dioramas” by David R. Foster and John F. O’Keefe</b><br>
+              Site Design by <a href="http://www.anniel.in/" target="_blank">Annie Lin</a> | Copyright &copy; <a href="http://harvardforest.fas.harvard.edu/" target="_blank">Harvard Forest</a> 2015 | <a href="mailto:hf-edu@fas.harvard.edu">Contact Us</a>
+              <br>
+            </h6>
+        </div>
+    </footer>
+
+
+
+    <!-- The Popups -->
+
+    <!-- 1700 Atmosphere -->
+    <div class="modal fade" id="1700air" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Forest-Atmosphere Exchange</h4>
+          </div>
+          <div class="modal-body">
+            <p>The thick forest cover of the pre-settlement era prevented erosion by intercepting rain and recycling moisture to the atmosphere through evapotranspiration.</p>
+            <img class="img-responsive" src="img/content/1700air.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1700 Biodiversity -->
+    <div class="modal fade" id="1700bio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Biodiversity</h4>
+          </div>
+          <div class="modal-body">
+            <p>Because of various natural and human disturbances, there was a wide range of vegetation and wildlife in the pre-settlement forest. Throughout the transitional forest zone of New England, you were able to find “northern species” (in the cooler, wetter part of the forest zone) such as hemlock, beech, and sugar maple as well as “southern species” (in more exposed, drier sites) such as white pine, red oak, and white ash. These plants supported a myriad of animal species, such bobolinks, meadowlarks, beavers, wolves, and bears.</p>
+            <img class="img-responsive" src="img/content/1700bio.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1700 History -->
+    <div class="modal fade" id="1700history" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">History</h4>
+          </div>
+          <div class="modal-body">
+            <p>The pre-settlement forest was a changing forest with considerable variation in wildlife and vegetation due to an ongoing process of natural disturbances (e.g. hurricanes, ice storms, pathogens, and fires ignited by lightning). Before settlement, most of the forest was not majorly affected by human interference, leading to a mosaic of different forests.</p>
+            <img class="img-responsive" src="img/content/1700history.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1700 Land Use -->
+    <div class="modal fade" id="1700people" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Land Use</h4>
+          </div>
+          <div class="modal-body">
+            <p>The pre-settlement forest was not undisturbed by humans: Native Americans cleared forests to support their villages and fields and burned tracts of forest land to improve hunting. Additionally, European settlers were trickling in to explore the opportunities offered by the diverse habitats of  New England.</p>
+            <img class="img-responsive" src="img/content/1700people.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1700 Soil -->
+    <div class="modal fade" id="1700soil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Soil</h4>
+          </div>
+          <div class="modal-body">
+            <p>Assorted soil types were found throughout the land, including sandy, droughty soils, wetter till soils, and shallow soils with bedrock outcrops. This range allowed for a variety of plant and animal life to develop in the pre-settlement forest.</p>
+            <img class="img-responsive" src="img/content/1700soil.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1700 Water -->
+    <div class="modal fade" id="1700water" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Water</h4>
+          </div>
+          <div class="modal-body">
+            <p>Sites flooded by beavers and areas inundated by annual fluctuations in the water table supported herbaceous/shrub vegetation (in contrast to surrounding forests). As a result, the pre-settlement landscape was very diverse.</p>
+            <img class="img-responsive" src="img/content/1700water.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 1740 Atmosphere -->
+    <div class="modal fade" id="1740air" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Forest-Atmosphere Exchange</h4>
+          </div>
+          <div class="modal-body">
+            <p>In clearing forests (long-term carbon stores), settlers could have aided in decreasing biosequestration (the capture and storage of the carbon dioxide by biological processes) by trees.</p>
+            <img class="img-responsive" src="img/content/1740air.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1740 Biodiversity -->
+    <div class="modal fade" id="1740bio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Biodiversity</h4>
+          </div>
+          <div class="modal-body">
+            <p>Because of hunting/trapping and forest clearing, the abundance of many species changed rapidly during the mid-18th century. For example, the wolf, bear, and deer populations dramatically decreased while bobolinks and meadowlarks thrived. Additionally, settlers introduced domesticated animals as well as grains, beans, squash, and other vegetables via their farms to the land.</p>
+            <img class="img-responsive" src="img/content/1740bio.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1740 History -->
+    <div class="modal fade" id="1740history" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">History</h4>
+          </div>
+          <div class="modal-body">
+            <p>European settlement occurred largely during the 18th century, with many settlers coming from “frontier” towns farther east (such as Rutland, Lancaster, Lunenburg, and Brookfield). The Colonial government granted land to proprietors for them to establish settlements in the frontier wilderness. For the first year or two, the settlers often traveled between their eastern homesteads and the forest, moving back and forth seasonally to clear as much land as possible before winter. </p>
+            <img class="img-responsive" src="img/content/1740history.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1740 Land Use -->
+    <div class="modal fade" id="1740people" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Land Use</h4>
+          </div>
+          <div class="modal-body">
+            <p>Many trees were cut down by settlers to build their dwellings, use for fuel/fertilizer, and make fences. Land was cleared so that there would be space to plant crops and raise farm animals. </p>
+            <img class="img-responsive" src="img/content/1740people.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1740 Soil -->
+    <div class="modal fade" id="1740soil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Soil</h4>
+          </div>
+          <div class="modal-body">
+            <p>To determine soil quality for their farms, settlers often inspected forest composition for clues. They noted, for example, that sugar maple, beech, and ash grew on productive site suitable for crops, while hemlock and red maple sites were usually growing on wetter rockier soil less suitable for farming. The settlers also suffused charcoal, potash, and forest leaf litter into the soil to act as fertilizers.</p>
+            <img class="img-responsive" src="img/content/1740soil.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1740 Water -->
+    <div class="modal fade" id="1740water" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Water</h4>
+          </div>
+          <div class="modal-body">
+            <p>Naturally occurring meadows along rivers and lakes helped support grazing by domesticated animals, and more water was being used by settlers to uphold their crop fields.</p>
+            <img class="img-responsive" src="img/content/1740water.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 1830 Atmosphere -->
+    <div class="modal fade" id="1830air" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Forest-Atmosphere Exchange</h4>
+          </div>
+          <div class="modal-body">
+            <p>With the natural blanketing effect of the forest gone from widespread deforestation, changes in temperature were beginning  to occur. (Before the thick brush of trees was able to trap heat in the forest during winter.)</p>
+            <img class="img-responsive" src="img/content/1830air.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1830 Biodiversity -->
+    <div class="modal fade" id="1830bio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Biodiversity</h4>
+          </div>
+          <div class="modal-body">
+            <p>Deforestation and grazing lead to more sprouting species (e.g. birches and red maple). Meanwhile, habitat change and widespread hunting/trapping reduced/eliminated wolf, cougar, beaver, moose, deer, and turkey populations. However, the newly established open meadows, grasslands, shrublands, and young forests increased open-land species populations (e.g. bobolinks, whippoorwills, meadowlarks, skunks, foxes, and rabbits).</p>
+            <img class="img-responsive" src="img/content/1830bio.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1830 History -->
+    <div class="modal fade" id="1830history" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">History</h4>
+          </div>
+          <div class="modal-body">
+            <p>During this height of forest clearing and agriculture, a thriving economy was established based on widespread local and home industry. The landscape dominated by human activity with human populations becoming fairly spread out. Labor transformed the forest landscape into rural farmlands.</p>
+            <img class="img-responsive" src="img/content/1830history.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1830 Land Use -->
+    <div class="modal fade" id="1830people" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Land Use</h4>
+          </div>
+          <div class="modal-body">
+            <p>During this time period, 60 to 80 percent of the land was cleared. Most cleared land was for grazing animals while less than 10 percent was actively plowed for crops. With little woodland left, there was a great demand for wood. (Wood was too valuable and less durable for fencing, so stone was used instead.) The most desirable trees were claimed for lumber while the least desirable trees were burned as fuel.</p>
+            <img class="img-responsive" src="img/content/1830people.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1830 Soil -->
+    <div class="modal fade" id="1830soil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Soil</h4>
+          </div>
+          <div class="modal-body">
+            <p>Throughout the period of deforestation and intensive agricultural use, soil was eroded  across fields and downhill slopes and into major river systems. With that movement, erosion occurred and agricultural wastes were dispersed.</p>
+            <img class="img-responsive" src="img/content/1830soil.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1830 Water -->
+    <div class="modal fade" id="1830water" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Water</h4>
+          </div>
+          <div class="modal-body">
+            <p>As the human population increased and spread out, large dams were constructed for industry and transportation. This eliminated anadromous fish like shad, herring, and salmon from most river and streams where they had thrived.</p>
+            <img class="img-responsive" src="img/content/1830water.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 1850 Atmosphere -->
+    <div class="modal fade" id="1850air" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Forest-Atmosphere Exchange</h4>
+          </div>
+          <div class="modal-body">
+            <p>One tree can absorb around 10 pounds of air pollutants annually. The new growth of white pine in the forest helped to offset pollution, especially from the Industrial Revolution.</p>
+            <img class="img-responsive" src="img/content/1850air.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1850 Biodiversity -->
+    <div class="modal fade" id="1850bio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Biodiversity</h4>
+          </div>
+          <div class="modal-body">
+            <p>As farmers abandoned their livelihoods, abandoned fields and pastures pastures sprouted up across New England. They then rapidly developed into forests of white pine, which were able to spread so quickly because their seeds were less palatable to animals than other hardwoods (such as red maple, white ash, red oak, chestnut, and gray and paper birch). The new pine grew very thick over the next several years, and allowed little undergrowth to develop. Deer, beaver, and bear populations were still low during this time, but meadowlarks and bobolinks prospered.</p>
+            <img class="img-responsive" src="img/content/1850bio.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1850 History -->
+    <div class="modal fade" id="1850history" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">History</h4>
+          </div>
+          <div class="modal-body">
+            <p>Farming declined on a broad scale across New England from the mid-1800s to more than a century later. The Industrial Revolution, a better transportation system, the discovery of gold in California, and the Civil War all contributed to drawing people away from rural regions. However, urban and suburban areas continued to grow in concentrated populations.</p>
+            <img class="img-responsive" src="img/content/1850history.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1850 Land Use -->
+    <div class="modal fade" id="1850people" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Land Use</h4>
+          </div>
+          <div class="modal-body">
+            <p>Because of the establishment of railroads, New England farms could not compete with the Midwest, and many farmers abandoned their land, leaving to seek fortune elsewhere. As a result, populations increased in urban and suburban areas.</p>
+            <img class="img-responsive" src="img/content/1850people.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1850 Soil -->
+    <div class="modal fade" id="1850soil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Soil</h4>
+          </div>
+          <div class="modal-body">
+            <p>As forests took over old agricultural fields  soils that had long been disturbed by plowing and grazing assumed a more natural structure and composition determined by native forest life.</p>
+            <img class="img-responsive" src="img/content/1850soil.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1850 Water -->
+    <div class="modal fade" id="1850water" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Water</h4>
+          </div>
+          <div class="modal-body">
+            <p>For rain to become groundwater, it must seep through soil into the water table. Trees help this process because the soil and materials underneath help to hold moisture for replenishing ground water levels. With the return of white pines to the previous rural landscape, a lesser amount of water was running off into streams and lakes; it was kept underground instead.</p>
+            <img class="img-responsive" src="img/content/1850water.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- 1910 Atmosphere -->
+    <div class="modal fade" id="1910air" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Forest-Atmosphere Exchange</h4>
+          </div>
+          <div class="modal-body">
+            <p>The average, mature tree produces around 260 pounds of oxygen a year. Removing the white pine forest cover temporarily reduced the effectiveness of the forest as a carbon dioxide sink.</p>
+            <img class="img-responsive" src="img/content/1910air.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1910 Biodiversity -->
+    <div class="modal fade" id="1910bio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Biodiversity</h4>
+          </div>
+          <div class="modal-body">
+            <p>With the removal of pine for commercial use, sprouts and saplings of oak, black birch, chestnut, and red maple were finally able to outgrow the new pine. Bear, deer, and beaver populations were also slowly beginning to recover.</p>
+            <img class="img-responsive" src="img/content/1910bio.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1910 History -->
+    <div class="modal fade" id="1910history" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">History</h4>
+          </div>
+          <div class="modal-body">
+            <p>Because the white pine made excellent framing material, finish lumber, and other products (in a time before cardboard and plastics), the trees became so marketable that portable sawmills and new wood-using factories began appearing across New England. A farmer who owned a 100-acre-wood lot could make $30,000, which was a huge sum to make. Between 1890 and 1910 (peak of the timber boom), about 15 billion board-feet of second growth white pine (with a manufacture value of over $400 million) was cut in central New England.</p>
+            <img class="img-responsive" src="img/content/1910history.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1910 Land Use -->
+    <div class="modal fade" id="1910people" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Land Use</h4>
+          </div>
+          <div class="modal-body">
+            <p>To gather the valuable white pine trees, clear-cutting and hauling with horses was facilitated by felling the trees in strips and windrowing the slash into long lines that were burned or left to rot. The logs were then transported to portable steam sawmills, where they were sawed into boards.</p>
+            <img class="img-responsive" src="img/content/1910people.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1910 Soil -->
+    <div class="modal fade" id="1910soil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Soil</h4>
+          </div>
+          <div class="modal-body">
+            <p>As the white pine was removed, herbivores and wind spread a variety of plant seeds across the land to grow in different soils. (Precipitation, temperature, location, and geologic material all influence soil development over time.)</p>
+            <img class="img-responsive" src="img/content/1910soil.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1910 Water -->
+    <div class="modal fade" id="1910water" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Water</h4>
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-body">
+            <p>Because trees can help trap water from precipitation, removing forest (before new forest growth has developed) cover could cause a temporary increase in water flowing downstream.</p>
+            <img class="img-responsive" src="img/content/1910water.jpg">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- 1915 Atmosphere -->
+    <div class="modal fade" id="1915air" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Forest-Atmosphere Exchange</h4>
+          </div>
+          <div class="modal-body">
+            <p>With the steady growth of trees in the New England forest, carbon dioxide could once again be sequestered, and the forest canopy created a shading roof for other plants.</p>
+            <img class="img-responsive" src="img/content/1915air.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1915 Biodiversity -->
+    <div class="modal fade" id="1915bio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Biodiversity</h4>
+          </div>
+          <div class="modal-body">
+            <p>After the white pine fell from logging, hardwoods began sprouting. These included red maple, red and white oak, white ash, chestnut, black cherry, and black birch.  Across the central new England landscape, a varied habitats developed, habitats that were suitable for species of open, grassy, and shrubby areas as well as forest edges.  Bear, deer, and beaver populations continued to recover along with the forest cover, though bird species (meadowlarks and bobolinks) saw a decline.</p>
+            <img class="img-responsive" src="img/content/1915bio.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1915 History -->
+    <div class="modal fade" id="1915history" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">History</h4>
+          </div>
+          <div class="modal-body">
+            <p>In the early 1860’s, Henry Thoreau noted the progression from open field to pine forest and then the sudden change to young hardwood forest after the pine was cut. He called this process “succession,” a term that foresters and ecologists still use today. As forests continued to expand over former agricultural land, the New England landscape was poised for a return of its native wildlife.</p>
+            <img class="img-responsive" src="img/content/1915history.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1915 Land Use -->
+    <div class="modal fade" id="1915people" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Land Use</h4>
+          </div>
+          <div class="modal-body">
+            <p>Logging from the previous years provided an open sunlit environment for new plants to develop. In general, widespread clear-cutting increased the proportion of sprouting and short-lived pioneer species in the landscape, which were less desirable for timber.</p>
+            <img class="img-responsive" src="img/content/1915people.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1915 Soil -->
+    <div class="modal fade" id="1915soil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Soil</h4>
+          </div>
+          <div class="modal-body">
+            <p>With the landscape ready for a revival to its native state, soil variety allowed for the development of a wide range of wildlife habitats.</p>
+            <img class="img-responsive" src="img/content/1915soil.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1915 Water -->
+    <div class="modal fade" id="1915water" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Water</h4>
+          </div>
+          <div class="modal-body">
+            <p>Along bodies of water, trees can hold soil in place as well as act as filters for sediment. With the growth of more hardwoods, soil erosion and runoff into the water was less common.</p>
+            <img class="img-responsive" src="img/content/1915water.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- 1930 Atmosphere -->
+    <div class="modal fade" id="1930air" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Forest-Atmosphere Exchange</h4>
+          </div>
+          <div class="modal-body">
+            <p>As the forest became thicker, trees continued to prevent erosion and store carbon, though climate will bring changes in the continuing decades.</p>
+            <img class="img-responsive" src="img/content/1930air.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1930 Biodiversity -->
+    <div class="modal fade" id="1930bio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Biodiversity</h4>
+          </div>
+          <div class="modal-body">
+            <p>From this diorama, it can be seen that many fast-growing tree have sprouted prolifically (red maple, gray birch, white ash, black birch, black cherry, etc) in the absence of pine. However, as the forest matures, red oaks will overtop and suppress these trees to become the dominant species in the forests. At this time, native wildlife was also beginning to return to pre-settlement levels.</p>
+            <img class="img-responsive" src="img/content/1930bio.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1930 History -->
+    <div class="modal fade" id="1930history" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">History</h4>
+          </div>
+          <div class="modal-body">
+            <p>In 100 years, much of the New England countryside has gone from open agricultural land to largely closed woodland and has supported two completely different types of forests. Both forests types resulted from the interaction of human activity, variation in the environment, and the biological characteristics of the native tree species. Without planning and with little encouragement, a resilient and dynamic new forest has developed across the region.</p>
+            <img class="img-responsive" src="img/content/1930history.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1930 Land Use -->
+    <div class="modal fade" id="1930people" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Land Use</h4>
+          </div>
+          <div class="modal-body">
+            <p>Beginning in 20th century, a new movement of conservation came into being. After World War I, the U.S. government became more active in forestry. In 1933, American President Franklin D. Roosevelt advised Congress to strengthen forest resources. Fun fact: Smokey Bear, now one of the most recognizable icons in America, was established around this period to increase awareness of forests and forest fires.</p>
+            <img class="img-responsive" src="img/content/1930people.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1930 Soil -->
+    <div class="modal fade" id="1930soil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Soil</h4>
+          </div>
+          <div class="modal-body">
+            <p>Similar to soil in the pre-settlement forest, a range of soils (in fineness and moisture) allowed for a variety of plant and animal life to develop.</p>
+            <img class="img-responsive" src="img/content/1930soil.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1930 Water -->
+    <div class="modal fade" id="1930water" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Water</h4>
+          </div>
+          <div class="modal-body">
+            <p>The actively growing young forest absorbed large quantities of water that was transpired into the atmosphere.  However, in contrast the white pine, which evergreen canopies intercept snow and rain through the fall to the spring, the deciduous hardwood tree swallow this precipitation to reach the ground where it is absorbed into the soil.</p>
+            <img class="img-responsive" src="img/content/1930water.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- now Atmosphere -->
+    <div class="modal fade" id="nowair" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Forest-Atmosphere Exchange</h4>
+          </div>
+          <div class="modal-body">
+            <p>In this modern era, the forest has been subjected to novel impacts, including forms of air pollution (e.g. ozone, nitrogen oxides, sulfur dioxide). This pollution has had many different effects, affecting temperature and the health of forest life. However, the forest does offset some of this pollution through its natural processes.</p>
+            <img class="img-responsive" src="img/content/nowair.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- now Biodiversity -->
+    <div class="modal fade" id="nowbio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Biodiversity</h4>
+          </div>
+          <div class="modal-body">
+            <p>Since the creation of the Harvard Forest dioramas, more shade tolerant and long-lived species are thriving in New England forests. However, pests (such as gypsy moth, Dutch elm disease, beech bark disease, hemlock woolly adelgid) have impacted the growth of some of these trees. Some birds (e.g. bobolinks, meadowlarks, song sparrows, and quail) have seen a decline since the 1900’s. Meanwhile, woodland plants, beavers, fishers, bears, bobcats, moose, turkeys, pileated woodpeckers, and eagles have become more common across the landscape.</p>
+            <img class="img-responsive" src="img/content/nowbio.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- now History -->
+    <div class="modal fade" id="nowhistory" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">History</h4>
+          </div>
+          <div class="modal-body">
+            <p>As these forests grow and mature and as dead and decaying wood accumulates on the ground, the forest landscape becomes increasingly natural in appearance and character. With time, too, early successional species decline and more shade-tolerant and long-lived species increase. Still, the legacy of land-use history persists in the distribution of species and the often abrupt transition between forest types. The stonewalls serve as a constant reminder of this land-use history.</p>
+            <img class="img-responsive" src="img/content/nowhistory.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- now Land Use -->
+    <div class="modal fade" id="nowpeople" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Land Use</h4>
+          </div>
+          <div class="modal-body">
+            <p>Increasingly people live in or near forests and often own small areas of woodland, yet their connect to and historical understand of the land, its forests, and its wildlife is at an historical low.</p>
+            <img class="img-responsive" src="img/content/nowpeople.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- now Soil -->
+    <div class="modal fade" id="nowsoil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Soil</h4>
+          </div>
+          <div class="modal-body">
+            <p>Soil pollution, in addition to being affected by waste/litter being left behind, is also much tied with air pollution and other components of the atmosphere. The chemistry of the soil can be affected by events such as acid rain, which can cause the soil to become toxic to some plants. It is important now to consider the effects of our laws in regards to protecting this valuable resource.</p>
+            <img class="img-responsive" src="img/content/nowsoil.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- now Water -->
+    <div class="modal fade" id="nowwater" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Water</h4>
+          </div>
+          <div class="modal-body">
+            <p>Water pollution has also posed a significant dilemma for the modern forest. Runoff (for example, nitrogen runoff) from urban environments and farms can affect life in downstream areas. Policy now plays an important role in regulating the water of the modern age.</p>
+            <img class="img-responsive" src="img/content/nowwater.jpg">
+            <br>
+            <h4>Related Current Research <a href="INSERT_URL_HERE" target="_blank">[link]</a></h4>
+            <p>PLACEHOLDER TEXT</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+</body>
+
+</html>    
